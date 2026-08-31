@@ -1,0 +1,5 @@
+'use client';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+/* Analytics só deve escutar o evento abaixo quando a escolha for “accepted”. */
+export function CookieBanner() { const [visible, setVisible] = useState(false); useEffect(() => setVisible(!localStorage.getItem('chico-cookie-consent')), []); const choose = (value: 'accepted' | 'essential') => { localStorage.setItem('chico-cookie-consent', value); setVisible(false); window.dispatchEvent(new CustomEvent('cookie-consent', { detail: value })); }; if (!visible) return null; return <aside className="cookie-banner" aria-label="Preferências de cookies"><div><strong>Sua privacidade importa</strong><p>Usamos cookies essenciais. Com sua permissão, também podemos medir visitas para melhorar o site.</p><Link href="/privacidade">Saiba mais</Link></div><div className="cookie-actions"><button className="button button-ghost" onClick={() => choose('essential')}>Só essenciais</button><button className="button button-primary" onClick={() => choose('accepted')}>Aceitar</button></div></aside>; }
