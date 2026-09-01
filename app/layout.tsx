@@ -48,7 +48,11 @@ export const metadata: Metadata = {
     images: ['/og.png'],
   },
   robots: { index: true, follow: true },
-  icons: { icon: '/favicon.svg' },
+  /* Usa a própria marca na aba do navegador, substituindo o ícone genérico. */
+  icons: {
+    icon: [{ url: '/images/logo-oficial.png', type: 'image/png' }],
+    apple: '/images/logo-oficial.png',
+  },
 };
 
 /* Dados estruturados ajudam buscadores a entender a unidade e seus serviços. */

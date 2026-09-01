@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
-import { site } from '@/content/site';
+import { ReservationMenu } from '@/components/reservation-menu';
 
 /* Links compartilhados pelos menus de desktop e celular. */
 const links = [
@@ -50,6 +50,8 @@ export function Header() {
             </Link>
           ))}
         </nav>
+        {/* Novo atalho: abre o formulário de reserva sem sair da página. */}
+        <ReservationMenu className="desktop-reservation" />
         <button
           className="menu-toggle"
           onClick={() => setOpen((value) => !value)}
@@ -71,14 +73,7 @@ export function Header() {
             {link.label}
           </Link>
         ))}
-        <a
-          className="button"
-          href={`https://wa.me/${site.whatsapp.replace('+', '')}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Reservar pelo WhatsApp
-        </a>
+        <ReservationMenu className="mobile-reservation" />
       </nav>
     </header>
   );

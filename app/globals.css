@@ -234,6 +234,269 @@ button:focus-visible {
   display: none;
 }
 
+/* ==================== MENU SUSPENSO DE RESERVA ==================== */
+.reservation-menu {
+  position: relative;
+  margin-left: 1.25rem;
+  color: var(--ink);
+}
+
+.reservation-menu summary {
+  list-style: none;
+}
+
+.reservation-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.reservation-trigger {
+  min-height: 44px;
+  padding: 0.7rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  border: 1px solid #d94848;
+  border-radius: 3px;
+  color: white;
+  background: var(--red);
+  box-shadow: 0 5px 15px rgb(0 0 0 / 18%);
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: background 0.2s ease;
+}
+
+.reservation-trigger:hover,
+.reservation-menu[open] .reservation-trigger {
+  background: #7e1012;
+}
+
+.reservation-trigger svg {
+  width: 17px;
+  height: 17px;
+  transition: transform 0.2s ease;
+}
+
+.reservation-menu[open] .reservation-trigger svg {
+  transform: rotate(180deg);
+}
+
+.reservation-panel {
+  position: absolute;
+  z-index: 70;
+  top: calc(100% + 0.8rem);
+  right: 0;
+  width: min(380px, calc(100vw - 2rem));
+  max-height: calc(100dvh - 105px);
+  padding: 1.35rem;
+  overflow-y: auto;
+  border: 1px solid #d8c8b8;
+  border-top: 4px solid var(--red);
+  border-radius: 4px;
+  color: var(--ink);
+  background: #fffaf4;
+  box-shadow: 0 18px 45px rgb(20 8 3 / 35%);
+}
+
+.reservation-panel header span {
+  color: var(--red);
+  font-size: 0.67rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.reservation-panel h2 {
+  margin: 0.3rem 0 0.45rem;
+  color: var(--brown);
+  font-size: 1.55rem;
+}
+
+.reservation-panel header p {
+  margin-bottom: 1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.reservation-panel form,
+.reservation-panel label {
+  display: grid;
+  gap: 0.42rem;
+}
+
+.reservation-panel form {
+  gap: 0.85rem;
+}
+
+.reservation-panel label {
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.reservation-panel input,
+.reservation-panel select,
+.reservation-panel textarea {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #cdbbaa;
+  border-radius: 3px;
+  color: var(--ink);
+  background: white;
+  font: inherit;
+  font-size: 1rem;
+}
+
+.reservation-panel textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.reservation-panel input:focus,
+.reservation-panel select:focus,
+.reservation-panel textarea:focus {
+  border-color: var(--red);
+  outline: 3px solid rgb(165 22 24 / 18%);
+}
+
+.reservation-submit {
+  min-height: 46px;
+  margin-top: 0.25rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  background: #168b48;
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.reservation-submit:hover {
+  background: #10723a;
+}
+
+.reservation-submit svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Retorno mostrado depois que a mensagem é preparada para o WhatsApp. */
+.reservation-feedback-layer {
+  position: fixed;
+  z-index: 120;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: min(370px, calc(100vw - 2rem));
+  pointer-events: none;
+}
+
+.reservation-feedback {
+  position: relative;
+  padding: 1.5rem;
+  border: 1px solid #d8c8b8;
+  border-top: 5px solid #168b48;
+  border-radius: 5px;
+  color: var(--ink);
+  background: #fffaf4;
+  box-shadow: 0 22px 55px rgb(20 8 3 / 38%);
+  pointer-events: auto;
+  animation: reservation-feedback-in 0.25s ease-out;
+}
+
+.reservation-feedback-icon {
+  width: 42px;
+  height: 42px;
+  margin-bottom: 0.65rem;
+  color: #168b48;
+}
+
+.reservation-feedback > span {
+  display: block;
+  color: #14703d;
+  font-size: 0.68rem;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.reservation-feedback h2 {
+  margin: 0.25rem 2rem 0.45rem 0;
+  color: var(--brown);
+  font-size: 1.65rem;
+}
+
+.reservation-feedback p {
+  margin-bottom: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.reservation-feedback-close {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  color: var(--muted);
+  background: transparent;
+  cursor: pointer;
+}
+
+.reservation-feedback-close:hover {
+  color: var(--brown);
+  background: #f0e7dc;
+}
+
+.reservation-feedback-close svg {
+  width: 21px;
+  height: 21px;
+}
+
+.reservation-feedback-action {
+  min-height: 42px;
+  padding: 0.65rem 1.1rem;
+  border: 0;
+  border-radius: 3px;
+  color: white;
+  background: var(--red);
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+@keyframes reservation-feedback-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.mobile-reservation {
+  display: none;
+}
+
 /* Carrossel principal mantém os cinco banners do tp-bgimg antigo sem distorção. */
 .legacy-slider {
   position: relative;
@@ -1442,6 +1705,10 @@ button:focus-visible {
     display: none;
   }
 
+  .desktop-reservation {
+    display: none;
+  }
+
   .menu-toggle {
     display: grid;
   }
@@ -1463,6 +1730,53 @@ button:focus-visible {
     transition: 0.25s;
     font-size: 1.2rem;
     font-weight: 800;
+    overflow-y: auto;
+  }
+
+  .mobile-reservation {
+    display: block;
+    margin: 0;
+  }
+
+  .mobile-reservation .reservation-trigger {
+    width: 100%;
+  }
+
+  .mobile-reservation .reservation-panel {
+    position: static;
+    width: 100%;
+    max-height: none;
+    margin-top: 0.75rem;
+  }
+
+  /* No celular, a confirmação ocupa uma camada central semelhante a um pop-up. */
+  .reservation-feedback-layer {
+    inset: 0;
+    width: auto;
+    padding: 1rem;
+    display: grid;
+    place-items: center;
+    background: rgb(24 10 4 / 68%);
+    pointer-events: auto;
+  }
+
+  .reservation-feedback {
+    width: min(100%, 340px);
+    padding: 1.8rem 1.3rem 1.4rem;
+    text-align: center;
+  }
+
+  .reservation-feedback-icon {
+    margin-inline: auto;
+  }
+
+  .reservation-feedback h2 {
+    margin-right: 0;
+    font-size: 1.75rem;
+  }
+
+  .reservation-feedback-action {
+    width: 100%;
   }
 
   .mobile-nav.open {
