@@ -420,7 +420,7 @@ button:focus-visible {
   color: #168b48;
 }
 
-.reservation-feedback > span {
+.reservation-feedback>span {
   display: block;
   color: #14703d;
   font-size: 0.68rem;
@@ -506,9 +506,19 @@ button:focus-visible {
   background: #1b0d07;
 }
 
-.legacy-slider > img {
+.legacy-slider>img,
+.legacy-slide-picture,
+.legacy-slide-picture>img {
   width: 100%;
   height: 100%;
+}
+
+.legacy-slide-picture {
+  display: block;
+}
+
+.legacy-slider>img,
+.legacy-slide-picture>img {
   object-fit: cover;
   animation: fade 0.5s ease;
 }
@@ -724,7 +734,7 @@ button:focus-visible {
   color: var(--brown);
 }
 
-.welcome-grid > div:last-child > p:not(.section-kicker) {
+.welcome-grid>div:last-child>p:not(.section-kicker) {
   color: var(--muted);
   font-size: 1.03rem;
 }
@@ -734,6 +744,20 @@ button:focus-visible {
 .legacy-menu-section,
 .legacy-gallery {
   padding: clamp(4.5rem, 8vw, 7rem) 0;
+}
+
+/* Reduz o espaçamento entre promoções e cardapio*/
+
+.promotions-section {
+  padding-bottom: 0;
+}
+
+.legacy-menu-section {
+  padding-top: 3rem;
+}
+
+.legacy-heading {
+  max-width: 700px;
 }
 
 .legacy-heading {
@@ -1043,7 +1067,7 @@ button:focus-visible {
   font-size: clamp(2.4rem, 5vw, 4.5rem);
 }
 
-.testimonials-heading > p:last-child {
+.testimonials-heading>p:last-child {
   color: #dacfc8;
 }
 
@@ -1273,7 +1297,7 @@ button:focus-visible {
   object-fit: cover;
 }
 
-.catalog-card > div {
+.catalog-card>div {
   padding: 1.5rem;
 }
 
@@ -1402,13 +1426,13 @@ button:focus-visible {
   border-radius: 22px;
 }
 
-.attraction-detail > div > span {
+.attraction-detail>div>span {
   color: #ded5ca;
   font-family: var(--font-display);
   font-size: 4rem;
 }
 
-.attraction-detail > div > p:not(.eyebrow) {
+.attraction-detail>div>p:not(.eyebrow) {
   color: var(--muted);
 }
 
@@ -1428,7 +1452,7 @@ button:focus-visible {
   align-items: stretch;
 }
 
-.contact-list > * {
+.contact-list>* {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -1788,7 +1812,7 @@ button:focus-visible {
     aspect-ratio: 16/8;
   }
 
-  .legacy-slider > img {
+  .legacy-slider>img {
     object-fit: cover;
   }
 
@@ -1851,7 +1875,7 @@ button:focus-visible {
     aspect-ratio: 4/3;
   }
 
-  .legacy-slider > img {
+  .legacy-slider>img {
     object-fit: cover;
     object-position: center;
   }
@@ -1859,7 +1883,7 @@ button:focus-visible {
   .legacy-slide-caption {
     top: auto;
     right: 3rem;
-    bottom: 2.8rem;
+    bottom: 5.5rem;
     left: 3rem;
     width: auto;
     padding: 0.85rem;
@@ -1897,6 +1921,16 @@ button:focus-visible {
   .legacy-menu-section,
   .legacy-gallery {
     padding: 4rem 0;
+  }
+
+  /*Reduz o espaço entre Promoção e Cardapio*/
+
+  .promotions-section {
+    padding-bottom: 0;
+  }
+
+  .legacy-menu-section {
+    padding-top: 3rem;
   }
 
   /* A apresentação institucional fica restrita ao desktop. */
@@ -1983,7 +2017,7 @@ button:focus-visible {
     text-align: center;
   }
 
-  .comfort-grid article > svg {
+  .comfort-grid article>svg {
     display: block;
     margin-inline: auto;
   }
@@ -2107,6 +2141,12 @@ button:focus-visible {
     animation: none;
   }
 
+  /* Mantém o banner de almoço no mesmo espaço 4/3 dos demais slides mobile. */
+  .legacy-slider.mobile-portrait-slide .legacy-slide-picture>img {
+    object-fit: cover;
+    object-position: center;
+  }
+
   .footer-commerce {
     flex-direction: column;
     gap: 1.5rem;
@@ -2119,6 +2159,7 @@ button:focus-visible {
 
 /* ==================== ACESSIBILIDADE: REDUÇÃO DE MOVIMENTO ==================== */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {

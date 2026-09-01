@@ -159,7 +159,7 @@ export function ReservationMenu({ className = '' }: ReservationMenuProps) {
 
       {/* Confirmação exibida ao voltar do WhatsApp; no celular assume formato de pop-up. */}
       {showFeedback && (
-        <div className="reservation-feedback-layer" role="status" aria-live="polite">
+        <output className="reservation-feedback-layer" aria-live="polite">
           <div className="reservation-feedback">
             <button
               className="reservation-feedback-close"
@@ -184,7 +184,7 @@ export function ReservationMenu({ className = '' }: ReservationMenuProps) {
               Entendi
             </button>
           </div>
-        </div>
+        </output>
       )}
     </>
   );

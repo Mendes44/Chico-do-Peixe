@@ -12,7 +12,17 @@ import { useEffect, useState } from 'react';
  * no slider do site antigo. Os banners de sertanejo e almoço já possuem
  * seus textos gravados na própria imagem e, por isso, não recebem legenda.
  */
-const slides = [
+type HeroSlide = {
+  image: string;
+  mobileImage?: string;
+  alt: string;
+  eyebrow?: string;
+  title?: string;
+  description?: string;
+  button?: string;
+};
+
+const slides: HeroSlide[] = [
   {
     image: '/images/slide-01.webp',
     alt: 'Área externa do Chico do Peixe',
@@ -22,6 +32,7 @@ const slides = [
   },
   {
     image: '/images/slide-06.webp',
+    mobileImage: '/images/slide-06-mobile-v3.webp',
     alt: 'Almoço com churrasco no Chico do Peixe',
   },
   {
@@ -56,6 +67,7 @@ export function LegacyHeroCarousel() {
     if (paused || window.matchMedia('(prefers-reduced-motion: reduce)').matches)
       return;
 
+    //Resposavel pelo tempo do slide principal
     const timer = window.setInterval(
       () => setCurrent((value) => (value + 1) % slides.length),
       4500,
@@ -70,15 +82,35 @@ export function LegacyHeroCarousel() {
 
   return (
     /* Início: imagem, legenda e navegação do destaque principal. */
-    <section className="legacy-slider" aria-label="Destaques do Chico do Peixe">
-      <Image
-        src={slide.image}
-        alt={slide.alt}
-        width="1600"
-        height="650"
-        fetchPriority="high"
-        key={slide.image}
-      />
+    <section
+      className={`legacy-slider${slide.mobileImage ? ' mobile-portrait-slide' : ''}`}
+      aria-label="Destaques do Chico do Peixe"
+    >
+      {slide.mobileImage ? (
+        <picture className="legacy-slide-picture" key={slide.image}>
+          <source
+            media="(max-width: 560px)"
+            srcSet={slide.mobileImage}
+            type="image/webp"
+          />
+          <Image
+            src={slide.image}
+            alt={slide.alt}
+            width="1600"
+            height="650"
+            fetchPriority="high"
+          />
+        </picture>
+      ) : (
+        <Image
+          src={slide.image}
+          alt={slide.alt}
+          width="1600"
+          height="650"
+          fetchPriority="high"
+          key={slide.image}
+        />
+      )}
 
       {/* As legendas continuam em HTML para permanecerem legíveis e responsivas. */}
       {slide.title && (

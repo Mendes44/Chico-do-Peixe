@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Gamepad2, Wifi } from 'lucide-react';
+import { ArrowRight, Wifi, Gamepad2 } from 'lucide-react';
 import { LegacyHeroCarousel } from '@/components/legacy-hero-carousel';
 import { MomentsCarousel } from '@/components/moments-carousel';
 import { PromotionsCarousel } from '@/components/promotions-carousel';
@@ -58,34 +58,6 @@ export default function Home() {
             <h2>Vem para o Chico</h2>
           </header>
           <PromotionsCarousel />
-        </div>
-      </section>
-
-      {/* Início: comodidades oferecidas pela unidade Santa Inês. */}
-      <section className="comfort-section">
-        <div className="container">
-          <header className="legacy-heading light">
-            <span>Comodidades</span>
-            <h2>Sinta-se à vontade</h2>
-          </header>
-          <div className="comfort-grid">
-            <article>
-              <Wifi />
-              <h3>Rede Wi-Fi liberada</h3>
-              <p>
-                Compartilhe suas fotos e converse com os amigos enquanto
-                preparamos seu prato e servimos aquela cerveja gelada.
-              </p>
-            </article>
-            <article>
-              <Gamepad2 />
-              <h3>Diversão para a garotada</h3>
-              <p>
-                Enquanto você aproveita com seus amigos, seus filhos também têm
-                um espaço preparado para se divertir.
-              </p>
-            </article>
-          </div>
         </div>
       </section>
 
@@ -155,6 +127,34 @@ export default function Home() {
 
       {/* Início: avaliações públicas atribuídas a clientes reais. */}
       <TestimonialsCarousel />
+
+      {/* Início: comodidades oferecidas pela unidade Santa Inês. */}
+      <section className="comfort-section">
+        <div className="container">
+          <header className="legacy-heading light">
+            <span>Comodidades</span>
+            <h2>Sinta-se à vontade</h2>
+          </header>
+          <div className="comfort-grid">
+            <article>
+              <Wifi />
+              <h3>Rede Wi-Fi liberada</h3>
+              <p>
+                Compartilhe suas fotos e converse com os amigos enquanto
+                preparamos seu prato e servimos aquela cerveja gelada.
+              </p>
+            </article>
+            <article>
+              <Gamepad2 />
+              <h3>Diversão para a garotada</h3>
+              <p>
+                Enquanto você aproveita com seus amigos, seus filhos também têm
+                um espaço preparado para se divertir.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
 
       {/* Início: fotos do restaurante e link para a galeria completa. */}
       <section className="legacy-gallery">
