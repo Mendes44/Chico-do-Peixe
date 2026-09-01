@@ -2,20 +2,17 @@ import * as React from 'react';
 
 const MOBILE_BREAKPOINT = 768;
 
+function subscribe(callback: () => void) {
+  const query = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`);
+  query.addEventListener('change', callback);
+  return () => query.removeEventListener('change', callback);
+}
+
+function getSnapshot() {
+  return window.innerWidth < MOBILE_BREAKPOINT;
+}
+
+/* Informa aos componentes quando a janela está abaixo do breakpoint móvel. */
 export function useIsMobile() {
-  const [isMobile, setIsMobile] = React.useState<boolean | undefined>(
-    undefined,
-  );
-
-  React.useEffect(() => {
-    const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`);
-    const onChange = () => {
-      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
-    };
-    mql.addEventListener('change', onChange);
-    setIsMobile(window.innerWidth < MOBILE_BREAKPOINT);
-    return () => mql.removeEventListener('change', onChange);
-  }, []);
-
-  return !!isMobile;
+  return React.useSyncExternalStore(subscribe, getSnapshot, () => false);
 }

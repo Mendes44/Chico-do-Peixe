@@ -1,16 +1,180 @@
+import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Clock3, MapPin, Music2, Star, Utensils } from 'lucide-react';
+import { ArrowRight, Gamepad2, Wifi } from 'lucide-react';
+import { LegacyHeroCarousel } from '@/components/legacy-hero-carousel';
+import { MomentsCarousel } from '@/components/moments-carousel';
+import { PromotionsCarousel } from '@/components/promotions-carousel';
+import { TestimonialsCarousel } from '@/components/testimonials-carousel';
+import { homeMenu, site } from '@/content/site';
+import { createPageMetadata } from '@/lib/seo';
 
-/* A home conduz o visitante do desejo à ação: conhecer o cardápio ou reservar. */
+export const metadata: Metadata = createPageMetadata({
+  title: 'Bar e restaurante de peixes em Santa Inês',
+  description: site.description,
+  path: '/',
+  image: '/images/slide-01.webp',
+});
+
 export default function Home() {
-  return <main>
-    {/* Hero com proposta direta e imagem real do restaurante. */}
-    <section className="hero" aria-labelledby="hero-title"><div className="container hero-grid"><div className="hero-copy"><p className="eyebrow">O sabor que reúne BH</p><h1 id="hero-title">Peixe bem servido.<br /><em>Momento bem vivido.</em></h1><p className="hero-lead">Porções generosas, cerveja gelada e aquele clima leve de Santa Inês — todos os dias, do almoço ao encontro com os amigos.</p><div className="actions"><Link className="button button-primary" href="/cardapio">Ver cardápio <ArrowRight size={18} /></Link><a className="button button-ghost" href="https://wa.me/5531991536420" target="_blank" rel="noopener noreferrer">Reservar mesa</a></div><div className="hero-facts"><span><Clock3 size={18} /> Aberto todos os dias</span><span><MapPin size={18} /> Santa Inês, BH</span></div></div><div className="hero-visual"><img src="/images/prato.jpg" alt="Prato de peixe servido no Chico do Peixe" width="900" height="700" fetchPriority="high" /><div className="rating-card"><Star size={18} fill="currentColor" /><strong>22,9 mil</strong><span>seguidores no Instagram</span></div></div></div></section>
-    {/* Benefícios inspirados nos destaques públicos do Instagram. */}
-    <section className="section" aria-labelledby="experiencias-title"><div className="container"><p className="eyebrow">Tem sempre um motivo para vir</p><div className="section-heading"><h2 id="experiencias-title">Do almoço ao happy hour</h2><p>Uma casa feita para comer bem, celebrar e ficar à vontade.</p></div><div className="feature-grid"><article className="feature-card"><Utensils /><span>01</span><h3>Almoço caprichado</h3><p>Peixes, porções e acompanhamentos para dividir — ou não.</p></article><article className="feature-card featured"><Music2 /><span>02</span><h3>Música & jogos</h3><p>Agenda especial e transmissões para animar a semana.</p></article><article className="feature-card"><Star /><span>03</span><h3>Seu aniversário</h3><p>Um espaço descontraído para reunir toda a turma.</p></article></div></div></section>
-    {/* Ambiente familiar com acesso à história da casa. */}
-    <section className="story-section"><div className="container story-grid"><div className="story-image"><img src="/images/playground.png" alt="Espaço com playground do Chico do Peixe" width="1500" height="741" loading="lazy" /></div><div className="story-copy"><p className="eyebrow">Para toda a família</p><h2>Você chega pela comida.<br />Fica pelo clima.</h2><p>Ambiente amplo, Wi-Fi liberado e playground para a garotada. Aqui, cada detalhe convida a aproveitar sem pressa.</p><Link className="text-link" href="/sobre">Conheça a nossa história <ArrowRight size={17} /></Link></div></div></section>
-    {/* Chamada final reduz o esforço para converter. */}
-    <section className="visit-section"><div className="container visit-inner"><div><p className="eyebrow light">Hoje combina com Chico</p><h2>Sua mesa está esperando.</h2></div><div className="actions"><a className="button button-light" href="https://wa.me/5531991536420" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a><Link className="button button-outline-light" href="/contato">Como chegar</Link></div></div></section>
-  </main>;
+  return (
+    <main>
+      {/* Início: carrossel principal com os banners do site antigo. */}
+      <LegacyHeroCarousel />
+
+      {/* Início: apresentação institucional e acesso à história da marca. */}
+      <section className="welcome-section">
+        <div className="container welcome-grid">
+          <div className="welcome-copy">
+            <p className="section-kicker">Bar e restaurante desde 1994</p>
+            <h1>Chico do Peixe</h1>
+            <p>
+              Uma casa feita para reunir pessoas ao redor de peixe bem
+              preparado, porções generosas e cerveja gelada. Aqui, cada mesa
+              recebe o cuidado e o sabor que transformaram o Chico em tradição
+              em Belo Horizonte.
+            </p>
+            <Link className="legacy-link" href="/sobre">
+              Conheça nossa história <ArrowRight />
+            </Link>
+          </div>
+          <div className="welcome-mark">
+            <Image
+              src="/images/logo-oficial.webp"
+              alt="Chico do Peixe"
+              width="180"
+              height="92"
+            />
+            <span>Seja bem-vindo!</span>
+          </div>
+        </div>
+      </section>
+
+      {/* Início: promoções; no celular o componente funciona como carrossel. */}
+      <section className="promotions-section">
+        <div className="container">
+          <header className="legacy-heading">
+            <span>Tem sempre um motivo</span>
+            <h2>Vem para o Chico</h2>
+          </header>
+          <PromotionsCarousel />
+        </div>
+      </section>
+
+      {/* Início: comodidades oferecidas pela unidade Santa Inês. */}
+      <section className="comfort-section">
+        <div className="container">
+          <header className="legacy-heading light">
+            <span>Comodidades</span>
+            <h2>Sinta-se à vontade</h2>
+          </header>
+          <div className="comfort-grid">
+            <article>
+              <Wifi />
+              <h3>Rede Wi-Fi liberada</h3>
+              <p>
+                Compartilhe suas fotos e converse com os amigos enquanto
+                preparamos seu prato e servimos aquela cerveja gelada.
+              </p>
+            </article>
+            <article>
+              <Gamepad2 />
+              <h3>Diversão para a garotada</h3>
+              <p>
+                Enquanto você aproveita com seus amigos, seus filhos também têm
+                um espaço preparado para se divertir.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* Início: prévia das principais categorias do cardápio. */}
+      <section className="legacy-menu-section">
+        <div className="container">
+          <header className="legacy-heading">
+            <span>Variedade de petiscos e bebidas</span>
+            <h2>Cardápio</h2>
+          </header>
+          <div className="legacy-menu-grid">
+            {homeMenu.map((item) => (
+              <article key={item.title}>
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  width="239"
+                  height="156"
+                  loading="lazy"
+                />
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.items}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="center">
+            <Link className="button" href="/cardapio">
+              Cardápio completo
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Início: chamada para reservas de grupos e comemorações. */}
+      <section className="booking-section">
+        <div className="container booking-grid">
+          <div className="booking-copy">
+            <p className="section-kicker light">Reservas</p>
+            <h2>Sua próxima comemoração começa aqui.</h2>
+            <p>
+              Reúna a família, os amigos ou o pessoal do trabalho. Para grupos a
+              partir de 10 pessoas, consulte a disponibilidade pelo WhatsApp.
+            </p>
+            <a
+              className="button light-button"
+              href={`https://wa.me/${site.whatsapp.replace('+', '')}?text=Ol%C3%A1%2C%20quero%20fazer%20uma%20reserva`}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-analytics-event="reservation_click"
+            >
+              Reservar pelo WhatsApp
+            </a>
+          </div>
+          <div className="booking-visual">
+            <Image
+              src="/images/banner-comemoracao-chico.webp"
+              alt="Família comemorando com peixe e acompanhamentos no Chico do Peixe"
+              width="1868"
+              height="875"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Início: avaliações públicas atribuídas a clientes reais. */}
+      <TestimonialsCarousel />
+
+      {/* Início: fotos do restaurante e link para a galeria completa. */}
+      <section className="legacy-gallery">
+        <div className="container">
+          <header className="legacy-heading">
+            <span>#EuNoChicoDoPeixeSantaInês</span>
+            <h2>Momentos no Chico</h2>
+            <p>
+              Tire sua foto no Chico, publique nas redes sociais e marque a
+              unidade Santa Inês.
+            </p>
+          </header>
+          <MomentsCarousel />
+          <div className="center gallery-link">
+            <Link className="button" href="/galeria">
+              Ver todas as fotos
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
 }
