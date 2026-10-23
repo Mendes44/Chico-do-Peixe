@@ -13,10 +13,10 @@ export function createPageMetadata({
   path: string;
   image: string;
 }): Metadata {
-  const canonical = `${site.url}${path}`;
+  const canonical = `${site.url}${path === '/' ? '' : path}`;
 
   return {
-    title,
+    title: { absolute: `${title} | ${site.name}` },
     description,
     alternates: { canonical },
     openGraph: {

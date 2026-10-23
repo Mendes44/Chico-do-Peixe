@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html lang="en" class="no-js"> 
+<head>
+  <!-- Basic -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Chico do Peixe | O mais saboroso peixe da cidade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
+  <meta name="keywords" content="Chico do peixe, chico do peixe santa inês, chico do peixe floramar, chico do peixe concordia, cerveja gelada bh, bares em bh, bar em bh" />
+  <meta name="description" content="O Bar e Restaurante Chico do Peixe oferece o melhor e mais saboroso peixe da cidade, com unidades nos bairros: Santa Inês, Floramar, Concórdia..."/>
+  
+  <link href="img/favicon.png" type="image/x-icon" rel="shortcut icon">
+  
+  <!-- Fonts 
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100italic,100,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>-->
+
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+  
+  <!-- Responsive -->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+  
+  <!-- Google Analytics -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-83961995-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  
+  
+</head>
+
+<body onload="initialize()">
+
+
+
+<div class="loader"></div>
+ 
+			<div class="col-xs-12">
+				<div class="logo">
+					<img id="logo" src="img/teste.png" alt="Chico do Peixe" title="Chico do Peixe">
+				</div>
+				
+				<!--<h1 class="titulo"><span alt="bar em bh"><img src="img/titulo-nossasunidades.png" alt=""></span></h1>-->
+			</div>
+			
+			<!--===| Event Start|===-->
+			<section class="event-wrapper section-padding book-table-wrapper">
+			  <div class="container">
+			 
+				  <div class="row">
+					
+					
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">	</div>
+					<!--<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+					  <div class="single-event">
+						<a href="concordia/index.php"><img src="img/unidConcordia.jpg" alt=""></a>
+						<div class="content-holder">
+						<h2><a href="concordia/index.php">Concórdia</a></h2>
+							<address>
+							  <strong><i class="fa fa-map-marker"></i></strong>
+							   Rua Pitangui, 11, Concórdia, Belo Horizonte|MG
+							</address>
+							<a class="btn btn-imfo btn-read-more" href="concordia/index.php">Acessar o site</a>
+							</div>
+					  </div>
+					</div>-->
+	
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">	
+						<center>
+					  <div class="single-event">
+						<a href="santaines/index.php"><img src="img/unidSantaines.jpg" alt=""></a>
+						<div class="content-holder">
+						<h2><a href="santaines/index.php">Santa Inês</a></h2>
+							<address>
+							  <strong><i class="fa fa-map-marker"></i></strong>
+							  Rua Contagem, 2165, Santa Inês, Belo Horizonte|MG
+							</address>
+							<a class="btn btn-imfo btn-read-more" href="santaines/index.php">Acessar o site</a>
+							</div>
+					  </div>
+						</center>
+					</div>
+					
+					
+					<!--<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+					  <div class="single-event">
+						<a href="floramar/index.php"><img src="img/unidFloramar.jpg" alt=""></a>
+						<div class="content-holder">
+						<h2><a href="floramar/index.php">Floramar</a></h2>
+							<address>
+							  <strong><i class="fa fa-map-marker"></i></strong>
+							  Av. Joaquim Clemente, 320, Floramar, Belo Horizonte|MG
+							</address>
+							<a class="btn btn-imfo btn-read-more" href="floramar/index.php">Acessar o site</a>
+							</div>
+					  </div>
+					</div>-->
+					<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">	</div>
+					
+				  </div>
+			  </div>
+			  
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						
+							<div class="copy-right text-center">
+								<p>Chico do Peixe - Todos os direitos reservados</p>
+								<a href="http://eawebsites.com.br/" target="new" alt="Ea websites" title="Desenvolvimento"><img src="img/lgeafooter.png" style="width:76px; height:18px; margin-top:40px;"/></a>
+							</div>
+						
+					</div>
+				</div>
+			</div>
+			  
+			</section>
+			<!--===| Event End|===-->
+
+
+			
+   
+
+ 
+  
+
+
+
+
+
+  <!--  JAVASCRIPT -->
+  <script type="text/javascript" src="js/jquery.min.js"></script> 
+
+  <!-- Modernizr JS --> 
+  <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+
+  <!--Bootatrap JS-->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <!-- Animate js -->
+  <script type="text/javascript" src="js/wow.min.js"></script>
+
+  <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+  <script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+  <script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+  <!-- Fancy Box JS -->
+  <script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+  
+  <!-- OWL CAROUSEL   -->
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script> 
+
+  <!-- Offcanvas -->
+  <script type="text/javascript" src="js/sidebarEffects.js"></script>
+  <script type="text/javascript" src="js/classie.js"></script>
+
+  <!-- Gallery Shuffle Js -->
+  <script type="text/javascript" src="js/jquery.shuffle.min.js"></script>
+   
+  <!-- jQuery UI -->
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+  <!-- Validation -->
+  <script type="text/javascript" src="js/validation.js"></script>
+
+  <!-- Tweetie JS  -->
+  <script type="text/javascript" src="js/tweetie.min.js"></script>
+
+  <!-- Css Preseter -->
+  <script type="text/javascript" src="js/preset.js"></script>
+  
+  <!-- Custom script --> 
+  <script type="text/javascript" src="js/custom.js"></script>
+
+ </body>
+</html>

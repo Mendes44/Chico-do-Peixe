@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta
+      name="description"
+      content="Proposta visual para o Chico do Peixe Santa Inês: comida boa, encontros e uma nova experiência à mesa em Belo Horizonte."
+    />
+    <meta name="theme-color" content="#174b35" />
+    <title>Chico do Peixe Santa Inês — Proposta visual</title>
+    <link rel="icon" href="../images/logo-oficial.png" />
+    <link rel="stylesheet" href="./estilos.css" />
+    <script src="./interacoes.js" defer></script>
+  </head>
+  <body>
+    <a class="pular-conteudo" href="#conteudo-principal"
+      >Pular para o conteúdo</a
+    >
+    <div class="faixa-superior">
+      <div class="limite faixa-conteudo">
+        <span>Santa Inês · Belo Horizonte</span>
+        <a href="#visita"
+          >Seu próximo encontro tem endereço
+          <span aria-hidden="true">↗</span></a
+        >
+      </div>
+    </div>
+
+    <header class="cabecalho">
+      <div class="limite cabecalho-conteudo">
+        <a class="marca" href="#inicio" aria-label="Chico do Peixe — início">
+          <img
+            src="../images/logo-oficial.webp"
+            width="241"
+            height="188"
+            alt="Chico do Peixe, bar e restaurante"
+          />
+          <span>Santa Inês</span>
+        </a>
+        <button
+          class="alternar-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navegacao"
+        >
+          Menu <span aria-hidden="true">☰</span>
+        </button>
+        <nav class="navegacao" id="navegacao" aria-label="Navegação principal">
+          <a href="#sabores">À mesa</a>
+          <a href="#experiencia">O nosso espaço</a>
+          <a href="#historia">Nossa história</a>
+          <a href="#visita">Como chegar</a>
+          <a
+            class="botao botao-verde reserva-cabecalho"
+            href="https://wa.me/5531991536420?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%20uma%20reserva%20no%20Chico%20Santa%20In%C3%AAs."
+            target="_blank"
+            rel="noopener noreferrer"
+            data-evento="clique_reserva"
+            >Consultar reserva <span aria-hidden="true">↗</span></a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo-principal">
+      <section
+        class="abertura limite"
+        id="inicio"
+        aria-labelledby="titulo-principal"
+      >
+        <div class="abertura-texto">
+          <p class="sobretitulo">
+            <span class="ponto" aria-hidden="true"></span> O sabor dos bons
+            encontros
+          </p>
+          <h1 id="titulo-principal">
+            Comida boa.<br />Gente querida.<br /><em>Vem pro Chico.</em>
+          </h1>
+          <p class="apresentacao">
+            Do almoço caprichado ao brinde sem pressa. Seu lugar para comer bem
+            e estar junto, no coração de Santa Inês.
+          </p>
+          <div class="acoes-abertura">
+            <a
+              class="botao botao-verde"
+              href="https://www.google.com/maps/dir/?api=1&amp;destination=Chico+do+Peixe+Santa+Ines+Rua+Contagem+2165+Belo+Horizonte"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-evento="clique_rota"
+              >Traçar minha rota <span aria-hidden="true">↗</span></a
+            >
+            <a class="ligacao-texto" href="#sabores"
+              >Explore os sabores <span aria-hidden="true">→</span></a
+            >
+          </div>
+          <div class="assinatura-abertura">
+            <span class="selo-tradicao">DESDE<br /><strong>1994</strong></span>
+            <p>
+              Uma história de sabor em BH.<br /><strong
+                >Um convite para se sentir em casa.</strong
+              >
+            </p>
+          </div>
+        </div>
+        <figure class="abertura-foto">
+          <img
+            src="./fotos/buffet-principal-960.webp"
+            srcset="
+              ./fotos/buffet-principal-480.webp 480w,
+              ./fotos/buffet-principal-960.webp 960w
+            "
+            sizes="(min-width: 900px) 55vw, 100vw"
+            width="960"
+            height="1280"
+            fetchpriority="high"
+            alt="Buffet do Chico do Peixe com pratos quentes, acompanhamentos e saladas"
+          />
+          <figcaption>
+            <span>Feito para dar vontade.</span
+            ><strong>Melhor ainda ao vivo.</strong>
+          </figcaption>
+          <a class="etiqueta-foto" href="#sabores"
+            ><span aria-hidden="true">↗</span> A sua próxima<br /><strong
+              >boa escolha.</strong
+            ></a
+          >
+        </figure>
+      </section>
+
+      <div class="faixa-sabores" aria-label="Experiências no Chico">
+        <div class="limite">
+          <span>Peixes & porções</span><span aria-hidden="true">✳</span
+          ><span>Almoço com sabor de casa</span><span aria-hidden="true">✳</span
+          ><span>Vinhos & bons encontros</span>
+        </div>
+      </div>
+
+      <section
+        class="secao limite"
+        id="sabores"
+        aria-labelledby="titulo-sabores"
+      >
+        <div class="titulo-secao">
+          <div>
+            <p class="sobretitulo">Para todos os apetites</p>
+            <h2 id="titulo-sabores">
+              A melhor parte?<br /><em>Escolher o seu favorito.</em>
+            </h2>
+          </div>
+          <a
+            class="ligacao-texto"
+            href="https://www.chicodopeixe.com.br/santaines/interno.php?Conteudo=cardapio"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-evento="clique_cardapio"
+            >Ver cardápio completo <span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="grade-sabores">
+          <article class="cartao-sabor">
+            <a
+              href="https://www.chicodopeixe.com.br/santaines/interno.php?Conteudo=cardapio"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-evento="clique_cardapio"
+              ><div class="foto-sabor">
+                <img
+                  src="./fotos/sabores-do-almoco-480.webp"
+                  srcset="
+                    ./fotos/sabores-do-almoco-480.webp 480w,
+                    ./fotos/sabores-do-almoco-960.webp 960w
+                  "
+                  sizes="(min-width: 900px) 30vw, 100vw"
+                  width="960"
+                  height="1280"
+                  loading="lazy"
+                  alt="Pratos quentes e acompanhamentos servidos no buffet do restaurante"
+                /><span>01 / Almoço</span>
+              </div>
+              <div class="legenda-sabor">
+                <h3>Seu almoço, do seu jeito.</h3>
+                <span aria-hidden="true">↗</span>
+              </div>
+              <p>
+                Self-service de segunda a sábado, no almoço. Variedade para
+                montar o prato com os sabores que você gosta.
+              </p></a
+            >
+          </article>
+          <article class="cartao-sabor">
+            <a
+              href="https://www.chicodopeixe.com.br/santaines/interno.php?Conteudo=cardapio"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-evento="clique_cardapio"
+              ><div class="foto-sabor">
+                <img
+                  src="./fotos/saladas-da-casa-480.webp"
+                  srcset="
+                    ./fotos/saladas-da-casa-480.webp 480w,
+                    ./fotos/saladas-da-casa-960.webp 960w
+                  "
+                  sizes="(min-width: 900px) 30vw, 100vw"
+                  width="960"
+                  height="1280"
+                  loading="lazy"
+                  alt="Salada com ovos, azeitonas e folhas no buffet do Chico do Peixe"
+                /><span>02 / À mesa</span>
+              </div>
+              <div class="legenda-sabor">
+                <h3>Cor, frescor e capricho.</h3>
+                <span aria-hidden="true">↗</span>
+              </div>
+              <p>
+                As combinações, os acompanhamentos e aquele toque da casa que
+                fazem a refeição virar um bom momento.
+              </p></a
+            >
+          </article>
+          <article class="cartao-sabor">
+            <a href="#adega"
+              ><div class="foto-sabor">
+                <img
+                  src="./fotos/nossa-adega-480.webp"
+                  srcset="
+                    ./fotos/nossa-adega-480.webp 480w,
+                    ./fotos/nossa-adega-960.webp 960w
+                  "
+                  sizes="(min-width: 900px) 30vw, 100vw"
+                  width="960"
+                  height="1280"
+                  loading="lazy"
+                  alt="Prateleiras de madeira com garrafas de vinho na nova adega"
+                /><span>03 / Para brindar</span>
+              </div>
+              <div class="legenda-sabor">
+                <h3>Um brinde à companhia.</h3>
+                <span aria-hidden="true">↗</span>
+              </div>
+              <p>
+                Nossa nova adega é mais um motivo para escolher a mesa, chamar
+                quem você gosta e aproveitar.
+              </p></a
+            >
+          </article>
+        </div>
+        <div class="convite-cardapio">
+          <p>
+            E o peixe que dá nome à casa?<br /><strong
+              >Está esperando por você no cardápio.</strong
+            >
+          </p>
+          <a
+            class="botao botao-contorno"
+            href="https://www.chicodopeixe.com.br/santaines/interno.php?Conteudo=cardapio"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-evento="clique_cardapio"
+            >Peixes, porções e muito mais <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+
+      <section
+        class="experiencia"
+        id="experiencia"
+        aria-labelledby="titulo-experiencia"
+      >
+        <div class="limite grade-experiencia">
+          <div class="colagem-experiencia">
+            <img
+              src="./fotos/mesa-de-sabores-960.webp"
+              srcset="
+                ./fotos/mesa-de-sabores-480.webp 480w,
+                ./fotos/mesa-de-sabores-960.webp 960w
+              "
+              sizes="(min-width: 900px) 44vw, 100vw"
+              width="960"
+              height="1280"
+              loading="lazy"
+              alt="Ambiente do buffet com mural verde e diversas opções de saladas"
+            /><span>Chegue com fome.<br /><em>Fique à vontade.</em></span>
+          </div>
+          <div class="texto-experiencia">
+            <p class="sobretitulo">Mais que uma refeição</p>
+            <h2 id="titulo-experiencia">
+              Tem lugar para<br />o seu <em>bom momento.</em>
+            </h2>
+            <p>
+              Um almoço em família. A conversa que se estende. O encontro com os
+              amigos que estava faltando na semana.
+            </p>
+            <p>
+              No Chico do Peixe Santa Inês, a boa companhia encontra comida
+              caprichada e um espaço para aproveitar junto.
+            </p>
+            <div class="detalhe-experiencia" id="adega">
+              <span aria-hidden="true">↗</span>
+              <div>
+                <h3>Conheça a nossa nova adega</h3>
+                <p>
+                  Vinhos e um novo cantinho para descobrir na sua próxima
+                  visita.
+                </p>
+              </div>
+            </div>
+            <a
+              class="ligacao-texto"
+              href="https://www.instagram.com/chicodopeixesantaines/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Veja mais do Chico no Instagram
+              <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="historia limite secao"
+        id="historia"
+        aria-labelledby="titulo-historia"
+      >
+        <div class="historia-marca">
+          <span>Uma história que começou em</span><strong>1994</strong
+          ><span>Belo Horizonte, Minas Gerais</span>
+        </div>
+        <div>
+          <p class="sobretitulo">O tempero da nossa história</p>
+          <h2 id="titulo-historia">
+            De um pequeno balcão<br /><em>a muitos bons encontros.</em>
+          </h2>
+          <p>
+            A história da marca começou no bairro Concórdia, com os tira-gostos
+            e o tempero de José Francisco, o Chico. A vontade de receber bem
+            atravessa essa trajetória e segue à mesa em Santa Inês.
+          </p>
+          <a
+            class="ligacao-texto"
+            href="https://www.chicodopeixe.com.br/santaines/interno.php?Conteudo=quemsomos"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Conheça a história completa <span aria-hidden="true">↗</span></a
+          >
+        </div>
+      </section>
+
+      <section class="visita" id="visita" aria-labelledby="titulo-visita">
+        <div class="limite grade-visita">
+          <div>
+            <p class="sobretitulo">A gente se encontra aqui</p>
+            <h2 id="titulo-visita">
+              A próxima mesa<br />pode ser <em>a sua.</em>
+            </h2>
+            <address>
+              <strong>Chico do Peixe · Santa Inês</strong><br />Rua Contagem,
+              2165 · Santa Inês<br />Belo Horizonte · MG
+            </address>
+            <div class="horarios">
+              <span>Todos os dias</span><strong>11h às 23h</strong>
+            </div>
+            <div class="acoes-visita">
+              <a
+                class="botao botao-claro"
+                href="https://www.google.com/maps/dir/?api=1&amp;destination=Chico+do+Peixe+Santa+Ines+Rua+Contagem+2165+Belo+Horizonte"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-evento="clique_rota"
+                >Abrir rota no Google Maps <span aria-hidden="true">↗</span></a
+              ><a class="ligacao-texto" href="tel:+553134850258"
+                >Ligar: (31) 3485-0258</a
+              >
+            </div>
+          </div>
+          <div class="cartao-encontro">
+            <span class="icone-encontro" aria-hidden="true">↗</span>
+            <h3>Tem um encontro<br />para combinar?</h3>
+            <p>
+              Reúna a família ou os amigos. Fale com a nossa equipe para
+              consultar reservas, disponibilidade e condições.
+            </p>
+            <a
+              class="botao botao-verde"
+              href="https://wa.me/5531991536420?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%20uma%20reserva%20no%20Chico%20Santa%20In%C3%AAs."
+              target="_blank"
+              rel="noopener noreferrer"
+              data-evento="clique_reserva"
+              >Conversar pelo WhatsApp <span aria-hidden="true">↗</span></a
+            ><a
+              class="ligacao-texto"
+              href="https://www.google.com/maps/search/?api=1&amp;query=Chico+do+Peixe+Santa+Ines+Rua+Contagem+2165+Belo+Horizonte"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Veja as avaliações no Google <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="limite rodape-conteudo">
+        <div>
+          <strong>Chico do Peixe</strong>
+          <p>Santa Inês · Sabor que reúne.</p>
+        </div>
+        <a
+          href="https://www.instagram.com/chicodopeixesantaines/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >@chicodopeixesantaines ↗</a
+        ><a href="mailto:santaines@chicodopeixe.com.br">Fale com a gente ↗</a
+        ><span>© 2026 Chico do Peixe</span>
+      </div>
+    </footer>
+    <nav class="atalhos-celular" aria-label="Atalhos para sua visita">
+      <a
+        href="https://www.google.com/maps/dir/?api=1&amp;destination=Chico+do+Peixe+Santa+Ines+Rua+Contagem+2165+Belo+Horizonte"
+        target="_blank"
+        rel="noopener noreferrer"
+        data-evento="clique_rota"
+        >Como chegar <span aria-hidden="true">↗</span></a
+      ><a
+        href="https://wa.me/5531991536420?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%20uma%20reserva%20no%20Chico%20Santa%20In%C3%AAs."
+        target="_blank"
+        rel="noopener noreferrer"
+        data-evento="clique_reserva"
+        >Consultar reserva <span aria-hidden="true">↗</span></a
+      >
+    </nav>
+  </body>
+</html>

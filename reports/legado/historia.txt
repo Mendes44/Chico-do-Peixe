@@ -1,0 +1,443 @@
+<!DOCTYPE HTML>
+<html lang="en" class="no-js"> 
+<head>
+  <!-- Basic -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Chico do Peixe Santa inês | O mais saboroso peixe da cidade</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"/>
+  <meta name="keywords" content="Chico do peixe, santa ines, chico do peixe santa inês" />
+  <meta name="description" content="O Bar e Restaurante Chico do Peixe oferece o melhor e mais saboroso peixe da cidade. Atendimento:(31) 3485.0258"/>
+  
+  <link href="img/favicon.png" type="image/x-icon" rel="shortcut icon">
+  
+  <!-- Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,300italic,300,100italic,100,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+  
+  <!-- Responsive -->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+</head>
+
+<body onload="initialize()">
+
+	<a href="https://api.whatsapp.com/send?phone=5531991536420&text=Ol%C3%A1%2C%20acessei%20seu%20SITE%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es" target="_blank" class="botao_duvidas"><img src="img/icon-whats.png"/></a>
+	
+	<!-- Facebook -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7";
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+
+ <div class="loader"></div>
+ <!--===| Search Start |===-->
+ <div class="search-wrapper">
+   <div class="search-container">
+    <div class="search-contents">
+      <p class="close"><i class="fa fa-times"></i></p>
+      <form>
+       <input type="search" placeholder="type keyword(s) here">
+       <button class="btn btn-primary btn-lg" type="submit">Search</button>
+     </form>
+    </div>
+   </div>
+ </div>
+ <!--===| Search End |===-->
+
+
+  <!--===| Header Top Start |===-->
+  <div id="offcanvas-container" class="wrapper offcanvas-container">
+    <div class="inner-wrapper offcanvas-pusher">
+		<header class="header-wrapper">
+          <div class="container">
+          <div class="row">
+            <div class="col-xs-11">
+              <div class="logo">
+                <a title="Chico do Peixe Santa inês" href="index.php">
+                  <img id="logo" src="img/teste.png" alt="Chico do Peixe Santa Inês">
+				</a>
+              </div>
+			  <div class="nomechicotop"></div>
+			  
+			  
+			  <!-- /Logo -->
+              <!-- =========================================
+              Menu
+              ========================================== -->
+              <div class="navbar navbar-default mainnav">
+                <div class="navbar-header navbar-right pull-right">
+                  <div id="offcanvas-trigger-effects" class="column">
+                    <button type="button" class="navbar-toggle visible-sm visible-xs" data-toggle="offcanvas" data-target=".navbar-collapse" data-placement="right" data-effect="offcanvas-effect"> <i class="fa fa-bars"></i>
+                    </button>
+                  </div>
+                </div>
+                
+				<div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="interno.php?Conteudo=quemsomos">Quem Somos</a></li>
+                    <li><a href="interno.php?Conteudo=cardapio">Cardápio</a></li>
+                    <li><a href="interno.php?Conteudo=reservas">Reservas</a></li> 
+                    <li><a href="interno.php?Conteudo=faleconosco">Fale Conosco</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </header>
+			
+			
+						
+			<div class="padding_top">
+			
+			
+	<!--===| About Us Banner Start|===-->
+	<section class="banner-wrapper about-banner">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Quem Somos</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--===| About Us Banner End|===-->
+  
+  <!--===| Our Story Start|===-->
+  <section class="section-padding main-story-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="story-wrapper">
+            <h2>Nossa História</h2><br />
+            <p>Nossa trajetória de sucesso começou no ano de 1994, em um simples e pequeno espaço localizado à Rua Pitangui, n°11 no Bairro Concórdia.</p>
+			<p>No começo eram servidos apenas alguns tira-gostos sempre bem elaborados e saborosos. Um tempo depois surgiu à idéia de colocar na pequena estufa do balcão alguns peixes fritos com um tempero único e inigualável, criado pelo próprio José Francisco (Chico), o proprietário do estabelecimento.</p>
+			<p>Foi um sucesso! Em pouco tempo a fama se espalhou e já não tínhamos mais espaço suficiente para comportar nossos clientes, que vinham dos mais diversos pontos da capital, região metropolitana e cidades vizinhas para experimentar o nosso peixe, que hoje é conhecido como “o peixe mais saboroso da cidade”.</p>
+			<p>Surgiu então a necessidade de ampliarmos o nosso espaço e mudamos para um galpão em frente, na mesma rua, onde atendemos até os dias de hoje. Inauguramos várias lojas em Belo Horizonte  e hoje com mais de 22 anos de existência, somos referência no ramo de bares e restaurantes da capital mineira. Nos preocupamos em manter com muito cuidado, o que nos fez chegar até aqui, a qualidade dos nossos produtos, ambiente agradável e familiar,  bom atendimento e a cerveja sempre gelada.</p>
+
+			<p>Cativar nossos clientes e garantir a sua satisfação é nosso objetivo e o motivo do nosso sucesso. Sejam sempre bem vindos ao Chico do Peixe!</p>
+
+          </div>
+        </div>
+        <div class=" col-xs-12 col-sm-6">
+          <div class="row">
+            <div class="col-xs-4 story-img">
+              <img src="img/quemsomos1.jpg" alt="">
+              <img src="img/quemsomos2.jpg" alt="">
+            </div>
+            <div class="col-xs-8">
+              <img src="img/quemsomos3.jpg" alt="">
+            </div>
+          </div>
+		  
+		  
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--===| Our Story End|===-->
+  
+   
+  <!--====| Grid Gallery Style Start|====--> 
+  <section class="galleri-wrapper gallery-filter padding-bottomfotos">
+    <div class="container">
+		<div class="row">
+			<h1>Fotos</h1><br /><br />
+        </div>
+  <div class="row">
+    <div class="gallery-all-item">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="grid">
+            <figure class="effect-cheff gallary-image">
+              <img src="img/galeriaquemsomos/01.jpg" alt=""/>
+              <figcaption>
+                <div class="gallary-hover-text">
+                  <a class="yellow-bar fancybox" href="img/galeriaquemsomos/01gde.jpg" data-fancybox-group="gallery"><i class="fa fa-plus"></i></a>
+                  
+                </div>
+              </figcaption>     
+            </figure>
+          </div>              
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="grid">
+            <figure class="effect-cheff gallary-image">
+             <img src="img/galeriaquemsomos/02.jpg" alt="Gallery 02">
+             <figcaption>
+               <div class="gallary-hover-text">
+                <a class="yellow-bar fancybox" href="img/galeriaquemsomos/02gde.jpg" data-fancybox-group="gallery"><i class="fa fa-plus"></i></a>
+                
+              </div>
+            </figcaption>     
+          </figure>
+        </div>              
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="grid">
+          <figure class="effect-cheff gallary-image">
+            <img src="img/galeriaquemsomos/03.jpg" alt="Gallery 03">
+            <figcaption>
+              <div class="gallary-hover-text">
+                <a class="yellow-bar fancybox" href="img/galeriaquemsomos/03gde.jpg" data-fancybox-group="gallery"><i class="fa fa-plus"></i></a>
+                
+              </div>
+            </figcaption>     
+          </figure>
+        </div>              
+      </div>
+      
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="grid">
+          <figure class="effect-cheff gallary-image">
+           <img src="img/galeriaquemsomos/04.jpg" alt="Gallery 04">
+           <figcaption>
+             <div class="gallary-hover-text">
+              <a class="yellow-bar fancybox" href="img/galeriaquemsomos/04gde.jpg" data-fancybox-group="gallery"><i class="fa fa-plus"></i></a>
+              
+            </div>
+          </figcaption>     
+        </figure>
+      </div>              
+    </div>
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+</section> 
+  <!--====| Grid Gallery Style End |====-->
+  
+ 
+<!--===| Testimonial Start|===-->
+<section class="section-padding testimonial-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-10 col-md-offset-1">
+        <h1>Depoimentos</h1>
+        <div id="testimonial" class="carousel slide carousel-fade" data-ride="carousel">
+          
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <p>Fui a primeira vez e fiquei encantada. Pretendo voltar muito em breve. Vocês estão de parabéns.</p>
+              <blockquote>Lucia Alves</blockquote>
+            </div>
+            <div class="item">
+              <p>Lugar muito bom pra ir com a família, não tem bagunça e você é bem atendido.</p>
+              <blockquote>Leonardo Martins</blockquote>
+            </div>
+            <div class="item">
+              <p>Adoro esse lugar, muito bom. Uma equipe muito bem educada!!!!</p>
+              <blockquote>Sid Vitória Barbosa</blockquote>
+            </div>
+			<div class="item">
+              <p>Responsabilidade com os clientes, parabéns. Vlw pelo feedback.</p>
+              <blockquote>Daniel de Oliveira</blockquote>
+            </div>
+			
+          </div>
+
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#testimonial" data-slide-to="0" class="active"></li>
+            <li data-target="#testimonial" data-slide-to="1"></li>
+            <li data-target="#testimonial" data-slide-to="2"></li>
+            <li data-target="#testimonial" data-slide-to="3"></li>
+          </ol>
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--===| Testimonial End|===-->
+
+
+<!--===| Right Fixed Booking Form Start|===-->
+  <div class="book-now-wrapper">
+    <p class="toggle">Reservas</p>
+    <div class="book-now ">  
+      <div class="book-form">
+        <p>Faça sua reserva agora mesmo</p>
+        <form id="sidebar_form" action="php/reservation.php" method="post" name="sidebarForm">
+          <div class="col-xs-12 col-sm-12">
+            <input class="form-control" type="text" name="name" placeholder="Nome">
+          </div>
+          <div class="col-xs-12 col-sm-12">
+            <input id="email-sidebar" class="form-control" type="email" name="mail" placeholder="E-mail">
+          </div>
+          <div class="col-xs-12 col-sm-12">
+            <input id="Data" class="form-control" type="text" name="date" placeholder="Data">
+          </div>
+		  <div class="col-xs-12 col-sm-12">
+            <input id="horario" class="form-control" type="text" name="horario" placeholder="Horário">
+          </div>
+          <div class="col-xs-12 col-sm-12">
+            <input class="form-control" type="text" name="person-no" placeholder="Número de pessoas">
+          </div>
+          <div class="col-xs-12 col-sm-12">
+            <textarea class="form-control" rows="3" name="message" placeholder="Observações"></textarea>
+          </div>
+          <div class="form-group col-xs-12">
+                <div id="sidebar_mail_success" class="success" style="display:none;">Your message has been sent successfully. </div>
+                <div id="sidebar_mail_fail" class="error" style="display:none;"> Sorry, error occured this time sending your message. </div>
+          </div>
+          <div class="col-xs-12 col-sm-12">
+            <button id="send-message-sidebar" class="btn" type="submit">Reservar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!--===| Right Fixed Booking Form End|===-->			</div>
+  
+  
+	<!--====| Footer section Start|====-->
+	<footer>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<div class="tweet-feed">
+							<a href="https://www.instagram.com/chicodopeixesantaines/" target="_blank"><img src="img/instagram.png" alt="Siga no instagram"/></a><br /><br/>
+
+							<a href="https://www.ifood.com.br/delivery/belo-horizonte-mg/chico-do-peixe-santa-ines-santa-ines/aca302f9-c17f-46c8-a246-9f0debf8509a?utm_medium=share" target="_blank"><img src="img/ifood.png" alt="Compre pelo ifood"/></a>
+						</div>
+					</div>
+					
+					<div class="col-xs-12 col-sm-6 col-md-8">
+						<h3 class="footer-title">Contatos</h3>
+						<div class="address">
+							<p><i class="fa fa-phone"></i><a href="">Whatsapp: (31) 99153-6420</a></p>
+							<p class="icon-map"><i class="fa fa-map-marker"></i> Av. Contagem, 2165, Santa Inês, Belo Horizonte|MG</p>
+							<p><i class="fa fa-envelope"></i> santaines@chicodopeixe.com.br</p>
+						</div>
+
+						<div class="clear"></div>
+						<br /><br />
+
+						<h3 class="footer-title">Horário de Funcionamento</h3>
+						<div class="open-time opening-time">
+							<p class="clock-time">&nbsp;Domingo à Quinta: de 11:00hs às 00:00hs -</p>
+							<p>Sexta e Sábado:  de 11:00hs às 01:00hrs</p>
+						</div>
+
+						<div class="clear"></div>
+						<br /><br />
+
+						<h3 class="footer-title">Aceitamos cartões de crédito, débito e refeição.</h3>
+						<img src="img/bandeiras_cartoes.png" style="width:540px; height:59px;"/>
+						
+						<div class="clear"></div>
+						<br /><br />
+
+						<!--<h3 class="footer-title">Unidades</h3>
+						<a href="../index.html" class="linkbranco">• Floramar</a>
+						<a href="../index.html" class="linkbranco">• Concórdia</a>-->
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="copy-right pull-left">
+								<p>Chico do Peixe Santa Inês - Todos os direitos reservados</p>
+							</div>
+
+							<div class="back-top pull-right">
+								<i class="fa fa-angle-up "></i>
+							</div>
+
+							<a href="http://eawebsites.com.br/" target="new"><img src="img/lgeafooter.png" style="width:76px; height:18px; margin-right:30px; float:right;" alt="" title="Desenvolvimento"/></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--==| Footer section End|==-->
+
+</div><!--==| .inner-wrapper |==-->
+
+    <!--==| offcanvas-menu |==-->
+    <div class="offcanvas-menu offcanvas-effect  hidden-sm hidden-md hidden-lg">
+      <button id="off-canvas-close-btn" class="close" type="button" aria-hidden="true" data-toggle="offcanvas" >&times;</button>
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="index.php">Home</a></li>
+		<li><a href="interno.php?Conteudo=quemsomos">Quem Somos</a></li>
+		<li><a href="interno.php?Conteudo=cardapio">Cardápio</a></li>
+		<li><a href="interno.php?Conteudo=reservas">Reservas</a></li> 
+		<li><a href="interno.php?Conteudo=faleconosco">Fale Conosco</a></li> 
+      </ul>
+    </div><!-- .offcanvas-menu -->
+  </div><!-- .wrapper -->
+
+  <!--  JAVASCRIPT -->
+  <script type="text/javascript" src="js/jquery.min.js"></script> 
+
+  <!-- Modernizr JS --> 
+  <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
+
+  <!--Bootatrap JS-->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+  <!-- Animate js -->
+  <script type="text/javascript" src="js/wow.min.js"></script>
+
+  <!-- SLIDER REVOLUTION 4.x SCRIPTS  -->
+  <script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+  <script type="text/javascript" src="vendor/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+  <!-- Fancy Box JS -->
+  <script type="text/javascript" src="vendor/fancybox/jquery.fancybox.min.js"></script>
+  
+  <!-- OWL CAROUSEL   -->
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script> 
+
+  <!-- Offcanvas -->
+  <script type="text/javascript" src="js/sidebarEffects.js"></script>
+  <script type="text/javascript" src="js/classie.js"></script>
+
+  <!-- Gallery Shuffle Js -->
+  <script type="text/javascript" src="js/jquery.shuffle.min.js"></script>
+   
+  <!-- jQuery UI -->
+  <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+  <!-- Tweetie JS  -->
+  <script type="text/javascript" src="js/tweetie.min.js"></script>
+
+  <!-- Google Map PopUp -->
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script type="text/javascript" src="js/map-popup.js"></script>
+  
+  <!-- Css Preseter -->
+  <script type="text/javascript" src="js/preset.js"></script>
+  
+  <!-- Custom script --> 
+  <script type="text/javascript" src="js/custom.js"></script>
+
+ </body>
+</html>

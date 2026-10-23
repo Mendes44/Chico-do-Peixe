@@ -1,0 +1,97 @@
+[
+  {
+    "origem": "WhatsApp Image 2026-10-23 at 13.20.07 (2).jpeg",
+    "larguraOriginal": 960,
+    "alturaOriginal": 1280,
+    "versoes": [
+      {
+        "arquivo": "buffet-principal-480.webp",
+        "largura": 480,
+        "altura": 640,
+        "bytes": 86506
+      },
+      {
+        "arquivo": "buffet-principal-960.webp",
+        "largura": 960,
+        "altura": 1280,
+        "bytes": 211296
+      }
+    ]
+  },
+  {
+    "origem": "WhatsApp Image 2026-10-23 at 13.20.07 (1).jpeg",
+    "larguraOriginal": 960,
+    "alturaOriginal": 1280,
+    "versoes": [
+      {
+        "arquivo": "sabores-do-almoco-480.webp",
+        "largura": 480,
+        "altura": 640,
+        "bytes": 88318
+      },
+      {
+        "arquivo": "sabores-do-almoco-960.webp",
+        "largura": 960,
+        "altura": 1280,
+        "bytes": 216178
+      }
+    ]
+  },
+  {
+    "origem": "WhatsApp Image 2026-10-23 at 13.20.07.jpeg",
+    "larguraOriginal": 960,
+    "alturaOriginal": 1280,
+    "versoes": [
+      {
+        "arquivo": "saladas-da-casa-480.webp",
+        "largura": 480,
+        "altura": 640,
+        "bytes": 57814
+      },
+      {
+        "arquivo": "saladas-da-casa-960.webp",
+        "largura": 960,
+        "altura": 1280,
+        "bytes": 128990
+      }
+    ]
+  },
+  {
+    "origem": "WhatsApp Image 2026-10-23 at 13.20.04 (1).jpeg",
+    "larguraOriginal": 960,
+    "alturaOriginal": 1280,
+    "versoes": [
+      {
+        "arquivo": "nossa-adega-480.webp",
+        "largura": 480,
+        "altura": 640,
+        "bytes": 74500
+      },
+      {
+        "arquivo": "nossa-adega-960.webp",
+        "largura": 960,
+        "altura": 1280,
+        "bytes": 186328
+      }
+    ]
+  },
+  {
+    "origem": "WhatsApp Image 2026-10-23 at 13.20.09 (1).jpeg",
+    "larguraOriginal": 960,
+    "alturaOriginal": 1280,
+    "versoes": [
+      {
+        "arquivo": "mesa-de-sabores-480.webp",
+        "largura": 480,
+        "altura": 640,
+        "bytes": 72110
+      },
+      {
+        "arquivo": "mesa-de-sabores-960.webp",
+        "largura": 960,
+        "altura": 1280,
+        "bytes": 180372
+      }
+    ]
+  }
+]

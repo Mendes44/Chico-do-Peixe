@@ -1,180 +1,251 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
+import Imagem from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Wifi, Gamepad2 } from 'lucide-react';
-import { LegacyHeroCarousel } from '@/components/legacy-hero-carousel';
-import { MomentsCarousel } from '@/components/moments-carousel';
-import { PromotionsCarousel } from '@/components/promotions-carousel';
-import { TestimonialsCarousel } from '@/components/testimonials-carousel';
-import { homeMenu, site } from '@/content/site';
+import {
+  ArrowUpRight as SetaExterna,
+  ArrowRight as SetaDireita,
+  Wine as Vinho,
+  Music2 as Musica,
+} from 'lucide-react';
+import { CarrosselAbertura } from '@/components/carrossel-abertura';
+import { PlanejarVisita } from '@/components/planejar-visita';
+import { site } from '@/content/site';
+import { contatoReserva, experienciasDaCasa } from '@/content/experiencia';
 import { createPageMetadata } from '@/lib/seo';
 
 export const metadata: Metadata = createPageMetadata({
-  title: 'Bar e restaurante de peixes em Santa Inês',
+  title: 'Peixes, almoço e bons encontros em Santa Inês',
   description: site.description,
   path: '/',
-  image: '/images/slide-01.webp',
+  image: '/santaines/images/atualizadas/buffet-principal.webp',
 });
-
-export default function Home() {
+export default function Inicio() {
   return (
-    <main>
-      {/* Início: carrossel principal com os banners do site antigo. */}
-      <LegacyHeroCarousel />
-
-      {/* Início: apresentação institucional e acesso à história da marca. */}
-      <section className="welcome-section">
-        <div className="container welcome-grid">
-          <div className="welcome-copy">
-            <p className="section-kicker">Bar e restaurante desde 1994</p>
-            <h1>Chico do Peixe</h1>
-            <p>
-              Uma casa feita para reunir pessoas ao redor de peixe bem
-              preparado, porções generosas e cerveja gelada. Aqui, cada mesa
-              recebe o cuidado e o sabor que transformaram o Chico em tradição
-              em Belo Horizonte.
-            </p>
-            <Link className="legacy-link" href="/sobre">
-              Conheça nossa história <ArrowRight />
-            </Link>
-          </div>
-          <div className="welcome-mark">
-            <Image
-              src="/images/logo-oficial.webp"
-              alt="Chico do Peixe"
-              width="180"
-              height="92"
-            />
-            <span>Seja bem-vindo!</span>
-          </div>
-        </div>
-      </section>
-
-      {/* Início: promoções; no celular o componente funciona como carrossel. */}
-      <section className="promotions-section">
-        <div className="container">
-          <header className="legacy-heading">
-            <span>Tem sempre um motivo</span>
-            <h2>Vem para o Chico</h2>
-          </header>
-          <PromotionsCarousel />
-        </div>
-      </section>
-
-      {/* Início: prévia das principais categorias do cardápio. */}
-      <section className="legacy-menu-section">
-        <div className="container">
-          <header className="legacy-heading">
-            <span>Variedade de petiscos e bebidas</span>
-            <h2>Cardápio</h2>
-          </header>
-          <div className="legacy-menu-grid">
-            {homeMenu.map((item) => (
-              <article key={item.title}>
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  width="239"
-                  height="156"
-                  loading="lazy"
-                />
-                <div>
-                  <h3>{item.title}</h3>
-                  <p>{item.items}</p>
-                </div>
-              </article>
-            ))}
-          </div>
-          <div className="center">
-            <Link className="button" href="/cardapio">
-              Cardápio completo
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Início: chamada para reservas de grupos e comemorações. */}
-      <section className="booking-section">
-        <div className="container booking-grid">
-          <div className="booking-copy">
-            <p className="section-kicker light">Reservas</p>
-            <h2>Sua próxima comemoração começa aqui.</h2>
-            <p>
-              Reúna a família, os amigos ou o pessoal do trabalho. Para grupos a
-              partir de 10 pessoas, consulte a disponibilidade pelo WhatsApp.
-            </p>
+    <main className="pagina-inicial">
+      <section
+        className="abertura limite"
+        id="inicio"
+        aria-labelledby="titulo-principal"
+      >
+        <div className="abertura-texto">
+          <p className="sobretitulo">
+            <span className="ponto" aria-hidden="true" />O sabor dos bons
+            encontros
+          </p>
+          <h1 id="titulo-principal">
+            Comida boa.
+            <br />
+            Gente querida.
+            <br />
+            <em>Vem pro Chico.</em>
+          </h1>
+          <p className="apresentacao">
+            Um almoço que abraça. Uma porção para dividir. Um brinde que vira
+            lembrança. Seu próximo bom encontro é em Santa Inês.
+          </p>
+          <div className="acoes-abertura">
             <a
-              className="button light-button"
-              href={`https://wa.me/${site.whatsapp.replace('+', '')}?text=Ol%C3%A1%2C%20quero%20fazer%20uma%20reserva`}
+              className="botao botao-verde"
+              href={site.maps}
               target="_blank"
               rel="noopener noreferrer"
-              data-analytics-event="reservation_click"
+              data-analytics-event="map_click"
+              data-posicao="abertura"
             >
-              Reservar pelo WhatsApp
+              Quero conhecer <SetaExterna aria-hidden="true" size={17} />
             </a>
-          </div>
-          <div className="booking-visual">
-            <Image
-              src="/images/banner-comemoracao-chico.webp"
-              alt="Família comemorando com peixe e acompanhamentos no Chico do Peixe"
-              width="1868"
-              height="875"
-              loading="lazy"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Início: avaliações públicas atribuídas a clientes reais. */}
-      <TestimonialsCarousel />
-
-      {/* Início: comodidades oferecidas pela unidade Santa Inês. */}
-      <section className="comfort-section">
-        <div className="container">
-          <header className="legacy-heading light">
-            <span>Comodidades</span>
-            <h2>Sinta-se à vontade</h2>
-          </header>
-          <div className="comfort-grid">
-            <article>
-              <Wifi />
-              <h3>Rede Wi-Fi liberada</h3>
-              <p>
-                Compartilhe suas fotos e converse com os amigos enquanto
-                preparamos seu prato e servimos aquela cerveja gelada.
-              </p>
-            </article>
-            <article>
-              <Gamepad2 />
-              <h3>Diversão para a garotada</h3>
-              <p>
-                Enquanto você aproveita com seus amigos, seus filhos também têm
-                um espaço preparado para se divertir.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      {/* Início: fotos do restaurante e link para a galeria completa. */}
-      <section className="legacy-gallery">
-        <div className="container">
-          <header className="legacy-heading">
-            <span>#EuNoChicoDoPeixeSantaInês</span>
-            <h2>Momentos no Chico</h2>
-            <p>
-              Tire sua foto no Chico, publique nas redes sociais e marque a
-              unidade Santa Inês.
-            </p>
-          </header>
-          <MomentsCarousel />
-          <div className="center gallery-link">
-            <Link className="button" href="/galeria">
-              Ver todas as fotos
+            <Link
+              className="ligacao-texto"
+              href="/cardapio"
+              data-analytics-event="menu_click"
+            >
+              Explorar o cardápio <SetaDireita aria-hidden="true" size={17} />
             </Link>
           </div>
+          <div className="assinatura-abertura">
+            <span className="selo-tradicao" aria-hidden="true">
+              BEM-VINDO
+              <br />
+              <Vinho size={22} strokeWidth={1.4} />
+            </span>
+            <p>
+              Peixes, petiscos e a nossa nova adega.
+              <br />
+              <strong>Venha com fome. Fique à vontade.</strong>
+            </p>
+          </div>
+        </div>
+        <CarrosselAbertura />
+      </section>
+      <div className="faixa-sabores" aria-label="Experiências no Chico">
+        <div className="limite">
+          <span>Peixes & porções</span>
+          <span aria-hidden="true">✳</span>
+          <span>Almoço com sabor de casa</span>
+          <span aria-hidden="true">✳</span>
+          <span>Vinhos & bons encontros</span>
+        </div>
+      </div>
+      <section
+        className="secao limite"
+        id="sabores"
+        aria-labelledby="titulo-sabores"
+      >
+        <div className="titulo-secao">
+          <div>
+            <p className="sobretitulo">Deu vontade? A mesa está aqui.</p>
+            <h2 id="titulo-sabores">
+              Tem sabor para cada fome.
+              <br />
+              <em>E motivo para voltar.</em>
+            </h2>
+          </div>
+          <Link
+            className="ligacao-texto"
+            href="/cardapio"
+            data-analytics-event="menu_click"
+          >
+            Conheça o cardápio <SetaExterna size={17} aria-hidden="true" />
+          </Link>
+        </div>
+        <div className="grade-sabores">
+          {experienciasDaCasa.map((experiencia) => (
+            <article className="cartao-sabor" key={experiencia.numero}>
+              <Link href={experiencia.destino}>
+                <div className="foto-sabor">
+                  <Imagem
+                    src={experiencia.imagem}
+                    alt={experiencia.alternativa}
+                    fill
+                    sizes="(min-width: 1400px) 410px, (min-width: 900px) 30vw, (min-width: 600px) 45vw, 90vw"
+                  />
+                  <span>
+                    {experiencia.numero} / {experiencia.categoria}
+                  </span>
+                </div>
+                <div className="legenda-sabor">
+                  <h3>{experiencia.titulo}</h3>
+                  <SetaExterna size={23} aria-hidden="true" />
+                </div>
+                <p>{experiencia.descricao}</p>
+              </Link>
+            </article>
+          ))}
+        </div>
+        <div className="convite-cardapio">
+          <p>
+            Do almoço ao último papo da noite.
+            <br />
+            <strong>Todos os dias, das 11h às 23h.</strong>
+          </p>
+          <a
+            className="botao botao-contorno"
+            href={contatoReserva}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-analytics-event="reservation_click"
+            data-posicao="sabores"
+          >
+            Combine sua visita <SetaExterna size={17} aria-hidden="true" />
+          </a>
         </div>
       </section>
+      <section
+        className="experiencia"
+        id="experiencia"
+        aria-labelledby="titulo-experiencia"
+      >
+        <div className="limite grade-experiencia">
+          <div className="colagem-experiencia">
+            <Imagem
+              src="/santaines/images/atualizadas/mesa-de-sabores.webp"
+              alt="Buffet do Chico do Peixe com saladas e mural verde no ambiente da casa"
+              width={960}
+              height={1280}
+              sizes="(min-width: 900px) 45vw, 90vw"
+            />
+            <span>
+              A conversa fica.
+              <br />
+              <em>A vontade de voltar também.</em>
+            </span>
+          </div>
+          <div className="texto-experiencia">
+            <p className="sobretitulo">Seu lugar de estar junto</p>
+            <h2 id="titulo-experiencia">
+              A melhor companhia
+              <br />
+              merece <em>uma boa mesa.</em>
+            </h2>
+            <p>
+              O almoço de família. O reencontro com os amigos. Aquela pausa no
+              meio da semana que acaba virando o melhor momento do dia.
+            </p>
+            <p>
+              No Chico do Peixe Santa Inês, cada encontro tem seu ritmo. Venha
+              para comer bem, descobrir novos sabores e aproveitar a companhia.
+            </p>
+            <div className="detalhe-experiencia" id="adega">
+              <Vinho size={30} strokeWidth={1.5} aria-hidden="true" />
+              <div>
+                <h3>Nossa nova adega espera por você</h3>
+                <p>
+                  Mais um cantinho para descobrir. Mais um motivo para o próximo
+                  brinde.
+                </p>
+              </div>
+            </div>
+            <div className="detalhe-experiencia">
+              <Musica size={28} strokeWidth={1.5} aria-hidden="true" />
+              <div>
+                <h3>Terça e quinta têm música ao vivo</h3>
+                <p>
+                  Acompanhe a programação no Instagram e escolha o seu próximo
+                  encontro.
+                </p>
+              </div>
+            </div>
+            <a
+              className="ligacao-texto"
+              href={site.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Veja o que está acontecendo no Chico{' '}
+              <SetaExterna size={17} aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section
+        className="historia limite secao"
+        id="historia"
+        aria-labelledby="titulo-historia"
+      >
+        <div className="historia-marca">
+          <span>Uma história que começou em</span>
+          <strong>1994</strong>
+          <span>Belo Horizonte, Minas Gerais</span>
+        </div>
+        <div>
+          <p className="sobretitulo">O tempero da nossa história</p>
+          <h2 id="titulo-historia">
+            O sabor abriu as portas.
+            <br />
+            <em>Os encontros fizeram a casa.</em>
+          </h2>
+          <p>
+            A história da marca começou no bairro Concórdia, com o tempero de
+            José Francisco, o Chico. Em Santa Inês, esse convite continua:
+            sentar à mesa, comer bem e se sentir em casa.
+          </p>
+          <Link className="ligacao-texto" href="/sobre">
+            Conheça a nossa história{' '}
+            <SetaExterna size={17} aria-hidden="true" />
+          </Link>
+        </div>
+      </section>
+      <PlanejarVisita />
     </main>
   );
 }

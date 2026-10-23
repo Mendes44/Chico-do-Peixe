@@ -1,57 +1,65 @@
 'use client';
 import Link from 'next/link';
 import { useSyncExternalStore } from 'react';
-
-const consentKey = 'chico-cookie-consent';
-
-function readConsent() {
-  return localStorage.getItem(consentKey);
+const chaveConsentimento = 'chico-cookie-consent';
+function lerConsentimento() {
+  try {
+    return localStorage.getItem(chaveConsentimento);
+  } catch {
+    return null;
+  }
 }
-
-function subscribe(callback: () => void) {
-  window.addEventListener('cookie-consent', callback);
-  window.addEventListener('storage', callback);
+function acompanharConsentimento(atualizar: () => void) {
+  window.addEventListener('cookie-consent', atualizar);
+  window.addEventListener('storage', atualizar);
   return () => {
-    window.removeEventListener('cookie-consent', callback);
-    window.removeEventListener('storage', callback);
+    window.removeEventListener('cookie-consent', atualizar);
+    window.removeEventListener('storage', atualizar);
   };
 }
-
-/* Analytics só deve escutar o evento abaixo quando a escolha for “accepted”. */
-export function CookieBanner() {
-  /* O armazenamento externo evita atualizações síncronas dentro de efeitos. */
-  const consent = useSyncExternalStore(subscribe, readConsent, () => 'pending');
-
-  const choose = (value: 'accepted' | 'essential') => {
-    localStorage.setItem(consentKey, value);
-    window.dispatchEvent(new CustomEvent('cookie-consent', { detail: value }));
-  };
-
-  if (consent !== null) return null;
+export function PreferenciasCookies() {
+  const consentimento = useSyncExternalStore(
+    acompanharConsentimento,
+    lerConsentimento,
+    () => 'pending',
+  );
+  function escolherPreferencia(valor: 'accepted' | 'essential') {
+    try {
+      localStorage.setItem(chaveConsentimento, valor);
+      window.dispatchEvent(
+        new CustomEvent('cookie-consent', { detail: valor }),
+      );
+    } catch {
+      /* Sem armazenamento, a medição permanece desativada. */
+    }
+  }
+  if (!process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || consentimento !== null)
+    return null;
   return (
-    /* Início: aviso LGPD e controles de consentimento. */
-    <aside className="cookie-banner" aria-label="Preferências de cookies">
-      <div>
-        <strong>Sua privacidade importa</strong>
-        <p>
-          Usamos cookies essenciais. Com sua permissão, também podemos medir
-          visitas para melhorar o site.
-        </p>
-        <Link href="/privacidade">Saiba mais</Link>
-      </div>
-      {/* Início: escolhas entre cookies essenciais e medição consentida. */}
-      <div className="cookie-actions">
+    <aside
+      className="preferencias-cookies"
+      aria-label="Preferências de cookies"
+    >
+      <strong>Seu encontro com o Chico começa com privacidade.</strong>
+      <p>
+        Com sua permissão, usamos medição de visitas para melhorar o site. Você
+        pode continuar apenas com o essencial.
+      </p>
+      <Link href="/privacidade">Conheça a política de privacidade</Link>
+      <div className="acoes-cookies">
         <button
-          className="button button-ghost"
-          onClick={() => choose('essential')}
+          type="button"
+          className="botao botao-contorno"
+          onClick={() => escolherPreferencia('essential')}
         >
           Só essenciais
         </button>
         <button
-          className="button button-primary"
-          onClick={() => choose('accepted')}
+          type="button"
+          className="botao botao-verde"
+          onClick={() => escolherPreferencia('accepted')}
         >
-          Aceitar
+          Permitir medição
         </button>
       </div>
     </aside>

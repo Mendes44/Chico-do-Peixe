@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 import { DM_Sans, Fraunces } from 'next/font/google';
-import { CookieBanner } from '@/components/cookie-banner';
-import { Footer } from '@/components/footer';
-import { Header } from '@/components/header';
-import { FloatingWhatsapp } from '@/components/floating-whatsapp';
+import { PreferenciasCookies } from '@/components/cookie-banner';
+import { Rodape } from '@/components/footer';
+import { Cabecalho } from '@/components/header';
 import { Analytics } from '@/components/analytics';
 import { site } from '@/content/site';
 import './globals.css';
@@ -18,8 +17,7 @@ export const metadata: Metadata = {
     default: 'Chico do Peixe Santa Inês | Bar e Restaurante em BH',
     template: '%s | Chico do Peixe Santa Inês',
   },
-  description:
-    'Peixes, porções generosas, cerveja gelada e ambiente para toda a família em Santa Inês, Belo Horizonte.',
+  description: site.description,
   keywords: [
     'restaurante de peixe em BH',
     'Chico do Peixe Santa Inês',
@@ -34,7 +32,7 @@ export const metadata: Metadata = {
     description: 'O peixe mais saboroso de BH. Venha viver esse momento.',
     images: [
       {
-        url: '/og.png',
+        url: '/santaines/og.webp',
         width: 1200,
         height: 630,
         alt: 'Chico do Peixe Santa Inês',
@@ -45,13 +43,18 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Chico do Peixe Santa Inês',
     description: 'O peixe mais saboroso de BH.',
-    images: ['/og.png'],
+    images: ['/santaines/og.webp'],
   },
   robots: { index: true, follow: true },
   /* Usa a própria marca na aba do navegador, substituindo o ícone genérico. */
   icons: {
-    icon: [{ url: '/images/logo-oficial.png', type: 'image/png' }],
-    apple: '/images/logo-oficial.png',
+    icon: [
+      {
+        url: '/santaines/images/atualizadas/marca-instagram.webp',
+        type: 'image/webp',
+      },
+    ],
+    apple: '/santaines/images/atualizadas/marca-instagram.webp',
   },
 };
 
@@ -63,15 +66,13 @@ const restaurantJsonLd = {
   name: site.name,
   url: site.url,
   image: [
-    `${site.url}/images/slide-01.webp`,
-    `${site.url}/images/menu-peixes.webp`,
+    `${site.url}/images/atualizadas/buffet-principal.webp`,
+    `${site.url}/images/atualizadas/petiscos-instagram.webp`,
   ],
-  logo: `${site.url}/images/logo-oficial.webp`,
+  logo: `${site.url}/images/atualizadas/marca-instagram.webp`,
   description: site.description,
   telephone: site.phone,
-  email: site.email,
   servesCuisine: ['Brasileira', 'Peixes', 'Frutos do mar'],
-  priceRange: '$$',
   hasMenu: `${site.url}/cardapio`,
   acceptsReservations: true,
   sameAs: [site.instagram, site.ifood, site.maps],
@@ -80,32 +81,28 @@ const restaurantJsonLd = {
     streetAddress: site.address.street,
     addressLocality: site.address.city,
     addressRegion: site.address.state,
-    postalCode: site.address.postalCode,
     addressCountry: 'BR',
-  },
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: site.address.latitude,
-    longitude: site.address.longitude,
   },
   openingHoursSpecification: [
     {
       '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday'],
+      dayOfWeek: [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+      ],
       opens: '11:00',
-      closes: '00:00',
-    },
-    {
-      '@type': 'OpeningHoursSpecification',
-      dayOfWeek: ['Friday', 'Saturday'],
-      opens: '11:00',
-      closes: '01:00',
+      closes: '23:00',
     },
   ],
 };
 
 /* Estrutura compartilhada por todas as páginas do site. */
-export default function RootLayout({
+export default function LayoutRaiz({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -120,16 +117,15 @@ export default function RootLayout({
           }}
         />
         {/* Acessibilidade: permite ir direto ao conteúdo usando o teclado. */}
-        <a className="skip-link" href="#conteudo">
+        <a className="pular-conteudo" href="#conteudo">
           Pular para o conteúdo
         </a>
         {/* Início: cabeçalho e conteúdo específico da rota atual. */}
-        <Header />
+        <Cabecalho />
         <div id="conteudo">{children}</div>
         {/* Início: elementos globais exibidos em todas as páginas. */}
-        <Footer />
-        <CookieBanner />
-        <FloatingWhatsapp />
+        <Rodape />
+        <PreferenciasCookies />
         <Analytics />
       </body>
     </html>

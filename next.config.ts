@@ -31,8 +31,25 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  basePath: '/santaines',
   images: {
-    formats: ['image/avif', 'image/webp'],
+    formats: ['image/webp'],
+  },
+  async redirects() {
+    return [
+      { source: '/index.php', destination: '/', permanent: true },
+      ...[
+        ['quemsomos', '/sobre'],
+        ['cardapio', '/cardapio'],
+        ['reservas', '/reservas'],
+        ['faleconosco', '/contato'],
+      ].map(([conteudo, destino]) => ({
+        source: '/interno.php',
+        has: [{ type: 'query' as const, key: 'Conteudo', value: conteudo }],
+        destination: destino,
+        permanent: true,
+      })),
+    ];
   },
   async headers() {
     return [{ source: '/(.*)', headers: securityHeaders }];

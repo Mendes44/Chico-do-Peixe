@@ -10,7 +10,7 @@ export const site = {
   shortName: 'Chico do Peixe',
   url: 'https://www.chicodopeixe.com.br/santaines',
   description:
-    'Peixes, porções generosas, cerveja gelada e ambiente para toda a família em Santa Inês, Belo Horizonte.',
+    'Peixes, petiscos, self-service no almoço e nova adega em Santa Inês, Belo Horizonte. Todos os dias, das 11h às 23h. Venha para o Chico do Peixe.',
   phone: '+553134850258',
   phoneLabel: '(31) 3485-0258',
   whatsapp: '+5531991536420',
@@ -19,9 +19,9 @@ export const site = {
   instagram: 'https://instagram.com/chicodopeixesantaines',
   ifood:
     'https://www.ifood.com.br/delivery/belo-horizonte-mg/chico-do-peixe-santa-ines-santa-ines/aca302f9-c17f-46c8-a246-9f0debf8509a?utm_medium=share',
-  maps: 'https://www.google.com/maps/dir//-19.8776811,-43.9091268',
+  maps: 'https://www.google.com/maps/dir/?api=1&destination=Chico+do+Peixe+Santa+Ines+Rua+Contagem+2165+Belo+Horizonte',
   address: {
-    street: 'Av. Contagem, 2165',
+    street: 'Rua Contagem, 2165',
     neighborhood: 'Santa Inês',
     city: 'Belo Horizonte',
     state: 'MG',
@@ -29,30 +29,27 @@ export const site = {
     latitude: -19.8776811,
     longitude: -43.9091268,
   },
-  hours: [
-    { days: 'Domingo a quinta', label: '11h às 0h' },
-    { days: 'Sexta e sábado', label: '11h à 1h' },
-  ],
+  hours: [{ days: 'Todos os dias', label: '11h às 23h' }],
 } as const;
 
 export const homeMenu = [
   {
-    image: '/images/menu-peixes.webp',
+    image: '/santaines/images/menu-peixes.webp',
     title: 'Peixes',
     items: 'Cascudo · Peroá · Traíra sem espinha',
   },
   {
-    image: '/images/menu-moquecas.webp',
+    image: '/santaines/images/menu-moquecas.webp',
     title: 'Moquecas',
     items: 'Salmão · Surubim · Camarão',
   },
   {
-    image: '/images/menu-porcoes.webp',
+    image: '/santaines/images/menu-porcoes.webp',
     title: 'Porções',
     items: 'Tilápia · Lambari · Filé de cascudo',
   },
   {
-    image: '/images/menu-bebidas.webp',
+    image: '/santaines/images/menu-bebidas.webp',
     title: 'Bebidas',
     items: 'Cervejas · Drinks · Sucos',
   },
@@ -61,7 +58,7 @@ export const homeMenu = [
 export const menuCategories = [
   {
     title: 'Peixes',
-    image: '/images/menu-peixes.webp',
+    image: '/santaines/images/menu-peixes.webp',
     position: 'center',
     items: [
       'Cascudo — tamanhos M ao G5',
@@ -73,7 +70,7 @@ export const menuCategories = [
   },
   {
     title: 'Moquecas',
-    image: '/images/menu-moquecas.webp',
+    image: '/santaines/images/menu-moquecas.webp',
     position: 'center',
     items: [
       'Moqueca de salmão',
@@ -85,7 +82,7 @@ export const menuCategories = [
   },
   {
     title: 'Pratos completos',
-    image: '/images/menu-pratos.webp',
+    image: '/santaines/images/menu-pratos.webp',
     position: 'center',
     items: [
       'Surubim à dorê com arroz e fritas',
@@ -97,7 +94,7 @@ export const menuCategories = [
   },
   {
     title: 'Sugestões do Chico',
-    image: '/images/menu-sugestoes.webp',
+    image: '/santaines/images/menu-sugestoes.webp',
     position: 'center',
     items: [
       'Camarão malucão empanado',
@@ -109,7 +106,7 @@ export const menuCategories = [
   },
   {
     title: 'Porções e carnes',
-    image: '/images/menu-porcoes.webp',
+    image: '/santaines/images/menu-porcoes.webp',
     position: 'center',
     items: [
       'Lambari',
@@ -121,7 +118,7 @@ export const menuCategories = [
   },
   {
     title: 'Bebidas',
-    image: '/images/menu-bebidas.webp',
+    image: '/santaines/images/menu-bebidas.webp',
     position: 'center',
     items: [
       'Cervejas e long necks',
@@ -135,17 +132,17 @@ export const menuCategories = [
 
 export const promotions = [
   {
-    image: '/images/atracao-aniversario.webp',
+    image: '/santaines/images/atracao-aniversario.webp',
     title: 'Aniversariante',
     text: 'Você ganha um petit gâteau no dia do seu aniversário. Promoção válida para contas acima de R$ 100.',
   },
   {
-    image: '/images/atracao-itaipava.webp',
+    image: '/santaines/images/atracao-itaipava.webp',
     title: 'Cerveja gelada',
     text: 'De segunda a quinta, exceto feriados e vésperas. Consulte o valor atualizado no atendimento.',
   },
   {
-    image: '/images/atracao-brasileirao.webp',
+    image: '/santaines/images/atracao-brasileirao.webp',
     title: 'Brasileirão',
     text: 'Junte os amigos e assista aos jogos do seu time do coração.',
   },
@@ -155,35 +152,35 @@ export const attractions = [
   {
     title: 'Almoço completo',
     tag: 'Todos os dias',
-    image: '/images/slide-06.webp',
+    image: '/santaines/images/slide-06.webp',
     position: 'right center',
     text: 'Buffet variado com peixes, churrasco, massas, saladas e acompanhamentos. Uma opção completa para o almoço em família ou com o pessoal do trabalho.',
   },
   {
     title: 'Sertanejo no Chico',
     tag: 'Terças e quintas · 20h',
-    image: '/images/slide-05.webp',
+    image: '/santaines/images/slide-05.webp',
     position: 'center',
     text: 'Música sertaneja ao vivo, porções para compartilhar e cerveja gelada para aproveitar a noite com a turma.',
   },
   {
     title: 'Happy hour Itaipava',
     tag: 'Bebida gelada',
-    image: '/images/atracao-itaipava.webp',
+    image: '/santaines/images/atracao-itaipava.webp',
     position: 'center',
     text: 'Cerveja gelada para acompanhar os peixes e porções da casa. Consulte condições e valores atuais no atendimento.',
   },
   {
     title: 'Aniversariante',
     tag: 'Seu dia merece Chico',
-    image: '/images/atracao-aniversario.webp',
+    image: '/santaines/images/atracao-aniversario.webp',
     position: 'center',
     text: 'No dia do aniversário, o aniversariante ganha um petit gâteau. Promoção válida para contas acima de R$ 100.',
   },
   {
     title: 'Brasileirão',
     tag: 'Vem torcer com a gente',
-    image: '/images/atracao-brasileirao.webp',
+    image: '/santaines/images/atracao-brasileirao.webp',
     position: 'center',
     text: 'Acompanhe os jogos do seu time com a turma, cercado por petiscos, peixe e aquele clima descontraído de bar.',
   },

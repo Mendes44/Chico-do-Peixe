@@ -8,22 +8,22 @@ export const metadata: Metadata = createPageMetadata({
   title: 'Privacidade e cookies',
   description,
   path: '/privacidade',
-  image: '/og.png',
+  image: '/santaines/og.webp',
 });
 
 /* Versão inicial; responsável, retenção e encarregado precisam de validação jurídica. */
-export default function PrivacyPage() {
+export default function Privacidade() {
   return (
     <main>
       {/* Início: identificação da política de privacidade. */}
-      <section className="page-hero compact">
-        <div className="container">
-          <p className="eyebrow">LGPD</p>
+      <section className="limite titulo-pagina">
+        <div>
+          <p className="sobretitulo">LGPD</p>
           <h1>Privacidade e cookies</h1>
         </div>
       </section>
       {/* Início: informações sobre dados, cookies, métricas e direitos. */}
-      <article className="container legal">
+      <article className="limite texto-legal">
         <h2>Dados e finalidade</h2>
         <p>
           Este site não solicita cadastro nem coleta dados por formulário. Links
@@ -37,17 +37,22 @@ export default function PrivacyPage() {
         </p>
         <h2>Medição de audiência</h2>
         <p>
-          O Google Analytics, quando configurado, só deve ser carregado após
-          consentimento. Recomendamos coleta anonimizada, retenção mínima e sem
-          recursos de publicidade.
+          A medição de audiência, quando habilitada, é carregada somente após
+          sua permissão. Sem essa escolha, os recursos de medição permanecem
+          desativados.
         </p>
         <h2>Seus direitos</h2>
         <p>
           Para dúvidas, correção ou exclusão de dados eventualmente tratados no
-          atendimento, escreva para santaines@chicodopeixe.com.br.
-        </p>
-        <p className="fine-print">
-          Versão de demonstração — revisar juridicamente antes da publicação.
+          atendimento, fale com a equipe pelo{' '}
+          <a
+            href="https://wa.me/5531991536420"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp do Chico do Peixe
+          </a>
+          .
         </p>
       </article>
     </main>

@@ -1,16 +1,16 @@
 import Link from 'next/link';
 import { ArrowLeft, Fish } from 'lucide-react';
 /* Página 404 oferece contexto e uma saída clara. */
-export default function NotFound() {
+export default function PaginaNaoEncontrada() {
   return (
     /* Início: mensagem e retorno seguro quando uma rota não é encontrada. */
-    <main className="not-found">
+    <main className="limite pagina-erro">
       <div>
         <Fish size={54} />
-        <p className="eyebrow">Erro 404</p>
+        <p className="sobretitulo">Erro 404</p>
         <h1>Esse peixe escapou.</h1>
         <p>A página que você procura mudou de endereço ou não existe.</p>
-        <Link className="button button-primary" href="/">
+        <Link className="botao botao-verde" href="/">
           <ArrowLeft size={18} /> Voltar ao início
         </Link>
       </div>
