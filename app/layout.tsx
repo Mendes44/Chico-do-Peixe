@@ -5,7 +5,11 @@ import { Rodape } from '@/components/footer';
 import { Cabecalho } from '@/components/header';
 import { Analytics } from '@/components/analytics';
 import { site } from '@/content/site';
-import { capaCompartilhamento, enderecoPublico } from '@/lib/compartilhamento';
+import {
+  capaCompartilhamento,
+  capaHorizontalCompartilhamento,
+  enderecoPublico,
+} from '@/lib/compartilhamento';
 import { CentralModais } from '@/components/central-modais';
 import './globals.css';
 
@@ -39,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Chico do Peixe Santa Inês',
     description: 'O peixe mais saboroso de BH.',
-    images: [capaCompartilhamento.url],
+    images: [capaHorizontalCompartilhamento.url],
   },
   robots: { index: true, follow: true },
   /* Usa a própria marca na aba do navegador, substituindo o ícone genérico. */

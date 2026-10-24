@@ -1,6 +1,10 @@
 import type { Metadata } from 'next';
 import { site } from '@/content/site';
-import { capaCompartilhamento, enderecoPublico } from '@/lib/compartilhamento';
+import {
+  capaCompartilhamento,
+  capaHorizontalCompartilhamento,
+  enderecoPublico,
+} from '@/lib/compartilhamento';
 
 /* Gera metadados consistentes e canônicos específicos para cada rota. */
 export function createPageMetadata({
@@ -31,7 +35,7 @@ export function createPageMetadata({
       card: 'summary_large_image',
       title: `${title} | ${site.name}`,
       description,
-      images: [capaCompartilhamento.url],
+      images: [capaHorizontalCompartilhamento.url],
     },
   };
 }

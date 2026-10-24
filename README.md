@@ -76,10 +76,12 @@ framework e sirva a aplicação na raiz do domínio.
 
 ## Capa ao compartilhar o link
 
-Todas as páginas usam a capa com logo em
-`public/capa-chico-santa-ines-v2.jpg` (1200 × 630), configurada para Open Graph e
-Twitter em `lib/compartilhamento.ts`. Uma versão otimizada em WebP também fica
-disponível no mesmo diretório. O JPEG é a versão de compartilhamento social.
+Todas as páginas usam a capa quadrada com logo em
+`public/capa-chico-whatsapp-v3.jpg` (1080 × 1080), configurada para Open Graph em
+`lib/compartilhamento.ts`. A composição preserva a marca na miniatura quadrada
+do WhatsApp. Twitter mantém a capa horizontal
+`public/capa-chico-santa-ines-v2.jpg` (1200 × 630). Ambas têm versões em WebP;
+JPEG é usado no compartilhamento social.
 
 A URL da imagem é absoluta e usa o domínio publicado, evitando que o WhatsApp
 busque a imagem no site legado. Dimensões, tipo e texto alternativo são enviados
