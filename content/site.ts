@@ -8,7 +8,8 @@
 export const site = {
   name: 'Chico do Peixe Santa Inês',
   shortName: 'Chico do Peixe',
-  url: 'https://www.chicodopeixe.com.br',
+  // Domínio de apresentação ao cliente. Atualize ao publicar no domínio definitivo.
+  url: 'https://chico-do-peixe.vercel.app',
   description:
     'Peixes, petiscos, self-service no almoço e nova adega em Santa Inês, Belo Horizonte. Todos os dias, das 11h às 23h. Venha para o Chico do Peixe.',
   phone: '+553134850258',

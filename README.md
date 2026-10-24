@@ -57,9 +57,10 @@ da raiz na Vercel: as páginas, imagens, CSS e JavaScript usam caminhos na raiz.
 
 Os endereços antigos sob `/santaines` redirecionam para as páginas correspondentes
 na raiz, por meio de `next.config.ts`. `robots.txt` e `sitemap.xml` também são
-servidos diretamente na raiz. Os metadados usam `NEXT_PUBLIC_SITE_URL`, quando
-configurada; na Vercel, usam automaticamente `VERCEL_PROJECT_PRODUCTION_URL` ou
-`VERCEL_URL`. Fora da Vercel, usam o domínio oficial em `content/site.ts`.
+servidos diretamente na raiz. O domínio público é definido em `content/site.ts`,
+no campo `site.url`. Durante a apresentação ao cliente, o endereço é
+`https://chico-do-peixe.vercel.app`. Os metadados não dependem de variáveis de
+ambiente da Vercel ou de valores antigos configurados no painel.
 
 Depois de alterar os arquivos do projeto, envie as alterações para a branch conectada à
 Vercel e aguarde o novo deploy ficar **Ready**. Um redeploy de um commit anterior
@@ -84,8 +85,8 @@ A URL da imagem é absoluta e usa o domínio publicado, evitando que o WhatsApp
 busque a imagem no site legado. Dimensões, tipo e texto alternativo são enviados
 nos metadados do HTML, sem depender de JavaScript no aplicativo de mensagens.
 
-Ao trocar o domínio principal, defina `NEXT_PUBLIC_SITE_URL` com a URL completa
-de produção e gere um novo deploy. Prévias de links já enviados podem permanecer
+Ao trocar o domínio principal, atualize `site.url` em `content/site.ts` com a URL
+completa de produção e gere um novo deploy. Prévias de links já enviados podem permanecer
 no cache do aplicativo por algum tempo.
 
 ## Verificações

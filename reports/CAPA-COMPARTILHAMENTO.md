@@ -4,7 +4,7 @@
 - Arquivo de compartilhamento: `public/capa-chico-santa-ines-v2.jpg`, 1200 × 630, aproximadamente 139 KiB.
 - Versão WebP: `public/capa-chico-santa-ines-v2.webp`, 1200 × 630, aproximadamente 106 KiB.
 - As páginas usam a mesma capa com logo em Open Graph e Twitter, com URL absoluta, dimensões, tipo e descrição alternativa.
-- Domínio resolvido por `NEXT_PUBLIC_SITE_URL`, depois `VERCEL_PROJECT_PRODUCTION_URL`/`VERCEL_URL`, e por último `site.url`. Isso evita buscar a capa no domínio legado ao compartilhar a versão da Vercel.
+- Domínio definido exclusivamente em `site.url`, atualmente `https://chico-do-peixe.vercel.app` para apresentação ao cliente. Não depende de variáveis de ambiente da Vercel: na publicação anterior, o HTML ainda apontava a capa para o domínio legado, embora o arquivo estivesse acessível na Vercel.
 - Canônicos, dados estruturados, sitemap e robots seguem o mesmo domínio público.
 - Não é necessário depender da execução de JavaScript pelo aplicativo de mensagens.
 
@@ -14,6 +14,6 @@ Create one finished premium institutional restaurant website social sharing cove
 
 ## Validação
 
-Build com o domínio de produção da Vercel e verificação dos metadados das oito páginas via HTTP com User-Agent de WhatsApp; arquivo JPEG servido com o tipo e dimensões esperados. A arte e as referências foram inspecionadas visualmente.
+Build sem variáveis de ambiente especiais e verificação dos metadados no HTML de produção das oito páginas; arquivo JPEG servido com o tipo e dimensões esperados. A arte e as referências foram inspecionadas visualmente.
 
 Um novo deploy é necessário para publicar a alteração. Prévias de links enviados anteriormente podem continuar em cache no aplicativo.
