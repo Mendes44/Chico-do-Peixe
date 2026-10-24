@@ -21,7 +21,6 @@ export const metadata: Metadata = createPageMetadata({
   title: 'Peixes, almoço e bons encontros em Santa Inês',
   description: site.description,
   path: '/',
-  image: '/images/atualizadas/petiscos-e-bebidas.webp',
 });
 export default function Inicio() {
   return (

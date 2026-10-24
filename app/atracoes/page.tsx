@@ -9,7 +9,6 @@ export const metadata: Metadata = createPageMetadata({
   description:
     'Almoço de segunda a sábado, música ao vivo às terças e quintas e nova adega no Chico do Peixe Santa Inês.',
   path: '/atracoes',
-  image: '/images/atualizadas/nossa-adega.webp',
 });
 export default function AgendaDoChico() {
   return (

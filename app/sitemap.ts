@@ -1,7 +1,8 @@
 import type { MetadataRoute } from 'next';
+import { enderecoPublico } from '@/lib/compartilhamento';
 /* Novas páginas devem ser acrescentadas nesta lista para indexação. */
 export default function mapaDoSite(): MetadataRoute.Sitemap {
-  const base = 'https://www.chicodopeixe.com.br';
+  const base = enderecoPublico;
   return [
     '',
     '/cardapio',

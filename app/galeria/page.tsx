@@ -7,7 +7,6 @@ export const metadata: Metadata = createPageMetadata({
   description:
     'Conheça os sabores e o ambiente do Chico do Peixe Santa Inês em fotos reais da casa.',
   path: '/galeria',
-  image: '/images/atualizadas/petiscos-instagram.webp',
 });
 export default function Galeria() {
   return (

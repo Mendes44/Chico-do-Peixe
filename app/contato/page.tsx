@@ -6,7 +6,6 @@ export const metadata: Metadata = createPageMetadata({
   description:
     'Rua Contagem, 2165, Santa Inês, Belo Horizonte. Todos os dias, 11h às 23h. Veja a rota, telefone e WhatsApp do Chico do Peixe.',
   path: '/contato',
-  image: '/images/atualizadas/mesa-de-sabores.webp',
 });
 export default function Contato() {
   return (

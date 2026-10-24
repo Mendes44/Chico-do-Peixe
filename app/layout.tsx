@@ -5,6 +5,7 @@ import { Rodape } from '@/components/footer';
 import { Cabecalho } from '@/components/header';
 import { Analytics } from '@/components/analytics';
 import { site } from '@/content/site';
+import { capaCompartilhamento, enderecoPublico } from '@/lib/compartilhamento';
 import { CentralModais } from '@/components/central-modais';
 import './globals.css';
 
@@ -13,7 +14,7 @@ const sans = DM_Sans({ variable: '--font-sans', subsets: ['latin'] });
 const display = Fraunces({ variable: '--font-display', subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.chicodopeixe.com.br'),
+  metadataBase: new URL(enderecoPublico),
   title: {
     default: 'Chico do Peixe Santa Inês | Bar e Restaurante em BH',
     template: '%s | Chico do Peixe Santa Inês',
@@ -30,21 +31,15 @@ export const metadata: Metadata = {
     locale: 'pt_BR',
     siteName: 'Chico do Peixe Santa Inês',
     title: 'Chico do Peixe Santa Inês',
+    url: enderecoPublico,
     description: 'O peixe mais saboroso de BH. Venha viver esse momento.',
-    images: [
-      {
-        url: '/og.webp',
-        width: 1200,
-        height: 630,
-        alt: 'Chico do Peixe Santa Inês',
-      },
-    ],
+    images: [capaCompartilhamento],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Chico do Peixe Santa Inês',
     description: 'O peixe mais saboroso de BH.',
-    images: ['/og.webp'],
+    images: [capaCompartilhamento.url],
   },
   robots: { index: true, follow: true },
   /* Usa a própria marca na aba do navegador, substituindo o ícone genérico. */
@@ -63,18 +58,18 @@ export const metadata: Metadata = {
 const restaurantJsonLd = {
   '@context': 'https://schema.org',
   '@type': ['Restaurant', 'LocalBusiness'],
-  '@id': `${site.url}/#restaurant`,
+  '@id': `${enderecoPublico}/#restaurant`,
   name: site.name,
   url: site.url,
   image: [
-    `${site.url}/images/atualizadas/buffet-principal.webp`,
-    `${site.url}/images/atualizadas/petiscos-instagram.webp`,
+    `${enderecoPublico}/images/atualizadas/buffet-principal.webp`,
+    `${enderecoPublico}/images/atualizadas/petiscos-instagram.webp`,
   ],
-  logo: `${site.url}/images/atualizadas/marca-instagram.webp`,
+  logo: `${enderecoPublico}/images/atualizadas/marca-instagram.webp`,
   description: site.description,
   telephone: site.phone,
   servesCuisine: ['Brasileira', 'Peixes', 'Frutos do mar'],
-  hasMenu: `${site.url}/cardapio`,
+  hasMenu: `${enderecoPublico}/cardapio`,
   acceptsReservations: true,
   sameAs: [site.instagram, site.ifood, site.maps],
   address: {

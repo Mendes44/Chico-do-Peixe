@@ -57,8 +57,9 @@ da raiz na Vercel: as páginas, imagens, CSS e JavaScript usam caminhos na raiz.
 
 Os endereços antigos sob `/santaines` redirecionam para as páginas correspondentes
 na raiz, por meio de `next.config.ts`. `robots.txt` e `sitemap.xml` também são
-servidos diretamente na raiz. Os metadados usam o domínio oficial configurado
-em `content/site.ts`, atualmente `https://www.chicodopeixe.com.br`.
+servidos diretamente na raiz. Os metadados usam `NEXT_PUBLIC_SITE_URL`, quando
+configurada; na Vercel, usam automaticamente `VERCEL_PROJECT_PRODUCTION_URL` ou
+`VERCEL_URL`. Fora da Vercel, usam o domínio oficial em `content/site.ts`.
 
 Depois de alterar os arquivos do projeto, envie as alterações para a branch conectada à
 Vercel e aguarde o novo deploy ficar **Ready**. Um redeploy de um commit anterior
@@ -71,6 +72,21 @@ Mantenha **Output Directory** no padrão do Next.js, sem definir `dist`, `out` o
 
 Em outro provedor compatível com Next.js, mantenha os redirecionamentos do
 framework e sirva a aplicação na raiz do domínio.
+
+## Capa ao compartilhar o link
+
+Todas as páginas usam a capa com logo em
+`public/capa-chico-santa-ines-v2.jpg` (1200 × 630), configurada para Open Graph e
+Twitter em `lib/compartilhamento.ts`. Uma versão otimizada em WebP também fica
+disponível no mesmo diretório. O JPEG é a versão de compartilhamento social.
+
+A URL da imagem é absoluta e usa o domínio publicado, evitando que o WhatsApp
+busque a imagem no site legado. Dimensões, tipo e texto alternativo são enviados
+nos metadados do HTML, sem depender de JavaScript no aplicativo de mensagens.
+
+Ao trocar o domínio principal, defina `NEXT_PUBLIC_SITE_URL` com a URL completa
+de produção e gere um novo deploy. Prévias de links já enviados podem permanecer
+no cache do aplicativo por algum tempo.
 
 ## Verificações
 

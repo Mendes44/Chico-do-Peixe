@@ -6,7 +6,6 @@ export const metadata: Metadata = createPageMetadata({
   description:
     'Combine sua visita ao Chico do Peixe Santa Inês pelo WhatsApp. Consulte reservas, disponibilidade e condições com a equipe.',
   path: '/reservas',
-  image: '/images/atualizadas/petiscos-instagram.webp',
 });
 export default function Reservas() {
   return (
