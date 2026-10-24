@@ -5,7 +5,7 @@ import { site } from '@/content/site';
 import { agendaAtual } from '@/content/experiencia';
 import { createPageMetadata } from '@/lib/seo';
 export const metadata: Metadata = createPageMetadata({
-  title: 'Agenda, música ao vivo e adega',
+  title: 'Agenda, música ao vivo e jogos',
   description:
     'Almoço de segunda a sábado, música ao vivo às terças e quintas e nova adega no Chico do Peixe Santa Inês.',
   path: '/atracoes',
@@ -17,13 +17,12 @@ export default function AgendaDoChico() {
       <header className="limite titulo-pagina">
         <p className="sobretitulo">Tem Chico na sua semana</p>
         <h1>
-          Comida boa é só
-          <br />
-          <em>o começo do encontro.</em>
+          Escolha o seu motivo para <em>reunir a turma no Chico.</em>
         </h1>
         <p>
-          Escolha seu motivo para vir. O almoço, a música e o próximo brinde
-          esperam por você em Santa Inês.
+          Encontre espaço na semana para um almoço, uma apresentação de música
+          ao vivo ou a partida do seu time. Acompanhe a programação e combine a
+          sua visita.
         </p>
         <div className="acoes-pagina">
           <a

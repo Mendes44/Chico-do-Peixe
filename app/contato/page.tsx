@@ -19,8 +19,8 @@ export default function Contato() {
           <em>começa por aqui.</em>
         </h1>
         <p>
-          Escolha a companhia. A gente ajuda com o endereço, os horários e os
-          detalhes da sua visita.
+          Conte com a equipe para organizar os detalhes da sua visita e encontre
+          aqui o endereço, a rota e os horários para aproveitar a casa.
         </p>
       </header>
       <PlanejarVisita />

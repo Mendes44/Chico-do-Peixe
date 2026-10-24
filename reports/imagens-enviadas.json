@@ -1,0 +1,104 @@
+{
+  "observacao": "A imagem duplicada de delivery foi importada uma única vez.",
+  "imagens": [
+    {
+      "nome": "petiscos-e-bebidas",
+      "origem": "Imagem do Instagram enviada pelo cliente",
+      "format": "webp",
+      "width": 582,
+      "height": 731,
+      "channels": 4,
+      "premultiplied": false,
+      "hasAlpha": true,
+      "size": 55138
+    },
+    {
+      "nome": "happy-hour-chico",
+      "origem": "Imagem do Instagram enviada pelo cliente",
+      "format": "webp",
+      "width": 570,
+      "height": 720,
+      "channels": 4,
+      "premultiplied": false,
+      "hasAlpha": true,
+      "size": 46932
+    },
+    {
+      "nome": "camaroes-com-drink",
+      "origem": "Imagem do Instagram enviada pelo cliente",
+      "format": "webp",
+      "width": 587,
+      "height": 732,
+      "channels": 4,
+      "premultiplied": false,
+      "hasAlpha": true,
+      "size": 38274
+    },
+    {
+      "nome": "drink-abacaxi",
+      "origem": "Imagem do Instagram enviada pelo cliente",
+      "format": "webp",
+      "width": 578,
+      "height": 732,
+      "channels": 4,
+      "premultiplied": false,
+      "hasAlpha": true,
+      "size": 33380
+    },
+    {
+      "nome": "chope-chico",
+      "origem": "Imagem do Instagram enviada pelo cliente",
+      "format": "webp",
+      "width": 577,
+      "height": 722,
+      "channels": 4,
+      "premultiplied": false,
+      "hasAlpha": true,
+      "size": 28274
+    },
+    {
+      "nome": "musica-ao-vivo",
+      "origem": "Imagem do Instagram enviada pelo cliente",
+      "format": "webp",
+      "width": 500,
+      "height": 680,
+      "channels": 4,
+      "premultiplied": false,
+      "hasAlpha": true,
+      "size": 37060
+    },
+    {
+      "nome": "delivery-ifood",
+      "origem": "Imagem do Instagram enviada pelo cliente",
+      "format": "webp",
+      "width": 575,
+      "height": 733,
+      "channels": 4,
+      "premultiplied": false,
+      "hasAlpha": true,
+      "size": 25822
+    },
+    {
+      "nome": "playground-criancas",
+      "origem": "Imagem do Instagram enviada pelo cliente",
+      "format": "webp",
+      "width": 421,
+      "height": 307,
+      "channels": 4,
+      "premultiplied": false,
+      "hasAlpha": true,
+      "size": 17622
+    },
+    {
+      "nome": "vinho-para-brindar",
+      "origem": "WhatsApp Image 2026-10-23 at 13.20.04 (2).jpeg",
+      "format": "webp",
+      "width": 960,
+      "height": 1280,
+      "channels": 3,
+      "premultiplied": false,
+      "hasAlpha": false,
+      "size": 84378
+    }
+  ]
+}

@@ -15,13 +15,12 @@ export default function Galeria() {
       <header className="limite titulo-pagina">
         <p className="sobretitulo">Um gostinho da casa</p>
         <h1>
-          Os olhos escolhem.
-          <br />
-          <em>A vontade de vir fica.</em>
+          Conheça os sabores e os espaços <em>que esperam por você.</em>
         </h1>
         <p>
-          Buffet, petiscos e a nova adega. Veja um pouco do que espera por você
-          no Chico do Peixe Santa Inês.
+          Percorra as fotos dos pratos, das bebidas e dos ambientes para
+          descobrir como será o seu próximo encontro no Chico do Peixe Santa
+          Inês.
         </p>
       </header>
       <section

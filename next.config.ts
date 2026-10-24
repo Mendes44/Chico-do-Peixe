@@ -34,6 +34,7 @@ const nextConfig: NextConfig = {
   basePath: '/santaines',
   images: {
     formats: ['image/webp'],
+    qualities: [75, 85],
   },
   async redirects() {
     return [

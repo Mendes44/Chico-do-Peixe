@@ -16,9 +16,7 @@ export default function NossaHistoria() {
       <header className="limite titulo-pagina">
         <p className="sobretitulo">O tempero da nossa história</p>
         <h1>
-          Uma casa se faz de sabor.
-          <br />
-          <em>E de quem senta à mesa.</em>
+          Uma história de sabor que continua <em>ao redor de cada mesa.</em>
         </h1>
         <p>
           Conheça a trajetória da marca que nasceu em Belo Horizonte e segue

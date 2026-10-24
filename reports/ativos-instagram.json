@@ -16,5 +16,92 @@
     "largura": 240,
     "altura": 240,
     "bytes": 7536
+  },
+  {
+    "arquivo": "camaroes-da-casa.webp",
+    "fonte": "https://www.instagram.com/chicodopeixesantaines/p/DekcxYMoJm6/",
+    "larguraOriginal": 1080,
+    "alturaOriginal": 1350,
+    "largura": 1080,
+    "altura": 1350,
+    "bytes": 108772
+  },
+  {
+    "arquivo": "salao-chico.webp",
+    "fonte": "https://www.instagram.com/chicodopeixesantaines/p/DdJ8hUPEezS/",
+    "larguraOriginal": 1080,
+    "alturaOriginal": 1440,
+    "largura": 1080,
+    "altura": 1440,
+    "bytes": 313354
+  },
+  {
+    "arquivo": "entradas-para-compartilhar.webp",
+    "fonte": "https://www.instagram.com/chicodopeixesantaines/p/DeKxmwJxtDE/",
+    "larguraOriginal": 1080,
+    "alturaOriginal": 1351,
+    "largura": 1080,
+    "altura": 1351,
+    "bytes": 132434
+  },
+  {
+    "arquivo": "bar-santa-ines-hd.webp",
+    "fonte": "https://www.instagram.com/chicodopeixesantaines/p/DdJ8hUPEezS/",
+    "larguraOriginal": 3072,
+    "alturaOriginal": 4096,
+    "largura": 1920,
+    "altura": 2560,
+    "bytes": 1093416
+  },
+  {
+    "arquivo": "espaco-ampliado-hd.webp",
+    "fonte": "https://www.instagram.com/chicodopeixesantaines/p/DdJ8hUPEezS/",
+    "larguraOriginal": 3072,
+    "alturaOriginal": 4096,
+    "largura": 1920,
+    "altura": 2560,
+    "bytes": 671022
+  },
+  {
+    "arquivo": "buffet-ambiente-hd.webp",
+    "fonte": "https://www.instagram.com/chicodopeixesantaines/p/DdJ8hUPEezS/",
+    "larguraOriginal": 3072,
+    "alturaOriginal": 4096,
+    "largura": 1920,
+    "altura": 2560,
+    "bytes": 635378
+  },
+  {
+    "arquivo": "casa-em-dia-de-jogo.webp",
+    "fonte": "https://www.instagram.com/stories/highlights/17914935719904657/",
+    "observacao": "Quadro de vídeo público; resolução nativa preservada.",
+    "largura": 720,
+    "altura": 1280
+  },
+  {
+    "arquivo": "aniversario-sobremesa-hd.webp",
+    "fonte": "https://www.instagram.com/stories/highlights/18016088645088708/",
+    "observacao": "Quadro de vídeo 1080p enquadrado na sobremesa; sem divulgar oferta histórica.",
+    "largura": 1080,
+    "altura": 940
+  },
+  {
+    "arquivo": "encontro-entre-amigas-hd.webp",
+    "fonte": "https://www.instagram.com/stories/highlights/17891365529190970/",
+    "observacao": "Quadro de vídeo 1080p; enquadramento preserva amigas e mesa.",
+    "largura": 864,
+    "altura": 1152
+  },
+  {
+    "arquivo": "adega-ambiente.webp",
+    "fonte": "FotosNovas/WhatsApp Image 2026-10-23 at 13.20.05 (4).jpeg",
+    "largura": 960,
+    "altura": 1280
+  },
+  {
+    "arquivo": "adega-rotulos.webp",
+    "fonte": "FotosNovas/WhatsApp Image 2026-10-23 at 13.20.05 (1).jpeg",
+    "largura": 960,
+    "altura": 1280
   }
 ]

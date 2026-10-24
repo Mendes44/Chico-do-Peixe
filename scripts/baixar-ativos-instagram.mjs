@@ -4,7 +4,10 @@ import sharp from 'sharp';
 
 const raiz = new URL('../', import.meta.url);
 const ativos = JSON.parse(
-  await readFile(new URL('work/ativos-instagram.json', raiz), 'utf8'),
+  await readFile(
+    new URL(process.argv[2] || 'work/ativos-instagram.json', raiz),
+    'utf8',
+  ),
 );
 const destino = new URL('public/images/atualizadas/', raiz);
 await mkdir(destino, { recursive: true });
@@ -34,8 +37,18 @@ for (const ativo of ativos) {
   });
 }
 
+const caminhoInventario = new URL('reports/ativos-instagram.json', raiz);
+let anteriores = [];
+try {
+  anteriores = JSON.parse(await readFile(caminhoInventario, 'utf8'));
+} catch (erro) {
+  if (erro.code !== 'ENOENT') throw erro;
+}
+const reunidos = new Map(
+  [...anteriores, ...inventario].map((item) => [item.arquivo, item]),
+);
 await writeFile(
-  new URL('reports/ativos-instagram.json', raiz),
-  JSON.stringify(inventario, null, 2) + '\n',
+  caminhoInventario,
+  JSON.stringify([...reunidos.values()], null, 2) + '\n',
 );
 console.log(inventario);

@@ -52,14 +52,14 @@ export function Analytics() {
           gtag('config', '${measurementId}', { anonymize_ip: true });
 
           document.addEventListener('click', function (event) {
-            var link = event.target.closest('a');
+            var link = event.target.closest('a, button[data-analytics-event]');
             if (!link) return;
             var href = link.href || '';
             var eventName = link.dataset.analyticsEvent || '';
             if (!eventName && href.includes('wa.me')) eventName = 'whatsapp_click';
             else if (href.includes('ifood.com.br')) eventName = 'ifood_click';
             else if (href.includes('google.com/maps')) eventName = 'map_click';
-            if (eventName) gtag('event', eventName, { link_url: link.origin + link.pathname, posicao: link.dataset.posicao || 'pagina' });
+            if (eventName) gtag('event', eventName, { link_url: (link.origin && link.pathname ? link.origin + link.pathname : window.location.origin + window.location.pathname), posicao: link.dataset.posicao || 'pagina' });
           });
         `}
       </Script>

@@ -5,6 +5,7 @@ import { Rodape } from '@/components/footer';
 import { Cabecalho } from '@/components/header';
 import { Analytics } from '@/components/analytics';
 import { site } from '@/content/site';
+import { CentralModais } from '@/components/central-modais';
 import './globals.css';
 
 /* Fontes são otimizadas pelo framework e não dependem de HTTP inseguro no cliente. */
@@ -121,10 +122,12 @@ export default function LayoutRaiz({
           Pular para o conteúdo
         </a>
         {/* Início: cabeçalho e conteúdo específico da rota atual. */}
-        <Cabecalho />
-        <div id="conteudo">{children}</div>
-        {/* Início: elementos globais exibidos em todas as páginas. */}
-        <Rodape />
+        <CentralModais>
+          <Cabecalho />
+          <div id="conteudo">{children}</div>
+          {/* Início: elementos globais exibidos em todas as páginas. */}
+          <Rodape />
+        </CentralModais>
         <PreferenciasCookies />
         <Analytics />
       </body>

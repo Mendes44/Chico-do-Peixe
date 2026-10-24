@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { BotaoModal } from '@/components/contexto-modais';
 import { createPageMetadata } from '@/lib/seo';
 
 const description =
@@ -26,9 +27,17 @@ export default function Privacidade() {
       <article className="limite texto-legal">
         <h2>Dados e finalidade</h2>
         <p>
-          Este site não solicita cadastro nem coleta dados por formulário. Links
-          para WhatsApp, Instagram, iFood e Google Maps levam a serviços
-          externos, sujeitos às políticas de cada plataforma.
+          O formulário solicita nome, telefone e detalhes da visita para
+          preparar uma mensagem no próprio navegador. Esses campos não são
+          enviados a um servidor deste site nem gravados em armazenamento local.
+          Após revisar, você pode abrir o WhatsApp e decidir enviar a mensagem à
+          equipe. O atendimento no WhatsApp segue as regras dessa plataforma.
+        </p>
+        <h2>Serviços externos</h2>
+        <p>
+          O mapa incorporado carrega conteúdo do Google Maps, sujeito à política
+          de privacidade do Google. Links para Instagram, iFood e WhatsApp levam
+          a serviços externos com suas próprias políticas.
         </p>
         <h2>Cookies essenciais</h2>
         <p>
@@ -45,13 +54,9 @@ export default function Privacidade() {
         <p>
           Para dúvidas, correção ou exclusão de dados eventualmente tratados no
           atendimento, fale com a equipe pelo{' '}
-          <a
-            href="https://wa.me/5531991536420"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            WhatsApp do Chico do Peixe
-          </a>
+          <BotaoModal acao="reserva" className="ligacao-texto">
+            formulário de contato do Chico do Peixe
+          </BotaoModal>
           .
         </p>
       </article>

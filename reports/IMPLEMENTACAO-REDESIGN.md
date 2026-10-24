@@ -1,3 +1,5 @@
+> Esta é a etapa inicial do redesign. As melhorias posteriores de formulário, cardápio, destaques e fotos estão em [ATUALIZACAO-CONTEUDO-UX.md](ATUALIZACAO-CONTEUDO-UX.md).
+
 # Redesign implementado — 23/10/2026
 
 O protótipo aprovado foi integrado à aplicação Next.js. A rota principal é

@@ -7,3 +7,9 @@ This version has breaking changes — APIs, conventions, and file structure may 
 This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
 
 <!-- END:nextjs-agent-rules -->
+
+## Imagens em alta definição
+
+- Priorizar sempre imagens em alta definição, usando os arquivos originais de maior resolução disponíveis.
+- Manter fotos em WebP e fornecer tamanhos responsivos; buscar resolução suficiente para telas com maior densidade sem comprometer desnecessariamente o carregamento.
+- Preservar a proporção e o enquadramento dos assuntos, evitando esticar fotos ou cortar rostos, mãos e elementos importantes.

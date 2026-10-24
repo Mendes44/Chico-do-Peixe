@@ -7,7 +7,8 @@ import {
   X as Fechar,
 } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
-import { contatoReserva, marcaAtual } from '@/content/experiencia';
+import { marcaAtual } from '@/content/experiencia';
+import { BotaoModal } from '@/components/contexto-modais';
 const links = [
   { destino: '/#sabores', rotulo: 'À mesa' },
   { destino: '/#experiencia', rotulo: 'O nosso espaço' },
@@ -48,10 +49,10 @@ export function Cabecalho() {
       <div className="faixa-superior">
         <div className="limite faixa-conteudo">
           <span>Santa Inês · Belo Horizonte</span>
-          <Link href="/#visita">
+          <BotaoModal acao="horarios">
             Todos os dias, das 11h às 23h{' '}
             <SetaExterna aria-hidden="true" size={12} />
-          </Link>
+          </BotaoModal>
         </div>
       </div>
       <header ref={referencia} className="cabecalho">
@@ -94,16 +95,22 @@ export function Cabecalho() {
                 {link.rotulo}
               </Link>
             ))}
-            <a
+            <BotaoModal
+              acao="cardapio"
+              onClick={() => definirAberto(false)}
+              className="item-menu-cardapio"
+            >
+              Cardápio
+            </BotaoModal>
+            <BotaoModal
+              acao="reserva"
+              onClick={() => definirAberto(false)}
               className="botao botao-verde reserva-cabecalho"
-              href={contatoReserva}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-analytics-event="reservation_click"
+              data-analytics-event="reservation_form_open"
               data-posicao="cabecalho"
             >
               Consultar reserva <SetaExterna aria-hidden="true" size={17} />
-            </a>
+            </BotaoModal>
           </nav>
         </div>
       </header>

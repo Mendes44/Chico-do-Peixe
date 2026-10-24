@@ -1,42 +1,42 @@
 [
   {
-    "categoria": "Peixes",
-    "texto": "Promoção Cascudo Médio 4 Unid\nCascudo G3\nCascudo G2\nCascudo G1\nCascudo G\nCascudo M\nPeroá G\nPeroá M\nPeroá P\nTraíra Sem Espinha G4\n(Todas as trairas acompanham arroz e vinagrete)\nTraíra Sem Espinha G3\n(Todas as trairas acompanham arroz e vinagrete)\nTraíra Sem Espinha G2\n(Todas as trairas acompanham arroz e vinagrete)\nTraíra Sem Espinha G1\n(Todas as trairas acompanham arroz e vinagrete)\nTraíra Sem Espinha G\n(Todas as trairas acompanham arroz e vinagrete)\nTraíra Sem Espinha M\n(Todas as trairas acompanham arroz e vinagrete)"
-  },
-  {
     "categoria": "Moquecas",
-    "texto": "Promoção Cascudo Médio 4 Unid\nCascudo G3\nCascudo G2\nCascudo G1\nCascudo G\nCascudo M\nPeroá G\nPeroá M\nPeroá P\nTraíra Sem Espinha G4\n(Todas as trairas acompanham arroz e vinagrete)\nTraíra Sem Espinha G3\n(Todas as trairas acompanham arroz e vinagrete)\nTraíra Sem Espinha G2\n(Todas as trairas acompanham arroz e vinagrete)\nTraíra Sem Espinha G1\n(Todas as trairas acompanham arroz e vinagrete)\nTraíra Sem Espinha G\n(Todas as trairas acompanham arroz e vinagrete)\nTraíra Sem Espinha M\n(Todas as trairas acompanham arroz e vinagrete)"
-  },
-  {
-    "categoria": "Pratos Com Acompanhamento",
     "texto": "Moqueca De Salmão\n(Todas as moquecas acompanham arroz, salada e pirão serve 2 á 3 pessoas)\nMoqueca De Salmão Ao Molho De Camarão\n(Todas as moquecas acompanham arroz, salada e pirão serve 2 á 3 pessoas)\nMoqueca De Surubim\n(Todas as moquecas acompanham arroz, salada e pirão serve 2 á 3 pessoas)\nMoqueca De Surubim Ao Molho De Camarão\n(Todas as moquecas acompanham arroz, salada e pirão serve 2 á 3 pessoas)\nMolho Camarão\n(Todas as moquecas acompanham arroz, salada e pirão serve 2 á 3 pessoas)"
   },
   {
-    "categoria": "Sugestão Do Cheff",
-    "texto": "Moqueca De Salmão\n(Todas as moquecas acompanham arroz, salada e pirão serve 2 á 3 pessoas)\nMoqueca De Salmão Ao Molho De Camarão\n(Todas as moquecas acompanham arroz, salada e pirão serve 2 á 3 pessoas)\nMoqueca De Surubim\n(Todas as moquecas acompanham arroz, salada e pirão serve 2 á 3 pessoas)\nMoqueca De Surubim Ao Molho De Camarão\n(Todas as moquecas acompanham arroz, salada e pirão serve 2 á 3 pessoas)\nMolho Camarão\n(Todas as moquecas acompanham arroz, salada e pirão serve 2 á 3 pessoas)"
+    "categoria": "Pratos com acompanhamento",
+    "texto": "Filé De Surubim À Dorê\n(Arroz ao alho e batata frita)\nFilé De Surubim À Dorê\n(Queijo ralado, arroz ao alho e batata frita)\nFilé De Surubim À Dorê\n(Molho de camarão, purê de batata e arroz)\nFilé De Cascudo\n(Fritas e arroz branco)\nFilé De Tilápia\n(Fritas e arroz ao alho)\nContra Filé Grelhado\n(Batata frita, e arroz ao alho)\nPicanha Grelhada\n(Batata frita e arroz ao alho)\nTraíra Sem Espinha G\n(Arroz, salada, tropeiro e fritas)"
   },
   {
-    "categoria": "Porções (500g Em Natura)",
+    "categoria": "Sugestões do chef",
     "texto": "Camafeu De Camarão C/ Requeijão\n(10 unid)\nCamarão Empanado\nCamarão Maluquim\nCamarão Paulista Vg Ou Vm\nBolinho De Bacalhau Do Porto\n(10 unid)"
   },
   {
-    "categoria": "Carnes (500g)",
-    "texto": "Camafeu De Camarão C/ Requeijão\n(10 unid)\nCamarão Empanado\nCamarão Maluquim\nCamarão Paulista Vg Ou Vm\nBolinho De Bacalhau Do Porto\n(10 unid)"
+    "categoria": "Porções",
+    "texto": "070 Filé De Cascudo\n227 Filé De Tilapia\n610 Filé De Surubim À Dor\nAcompanha molho tártaro\n266 Filé De Tilapia Com Fritas\n777 Botecar De Verão\nFilé de cascudo com pirão de peixe levemente"
+  },
+  {
+    "categoria": "Carnes",
+    "texto": "751 Contra Filé\n752 Contra Filé, Fritas E Queijo\n079 Picanha\n080 Picanha, Fritas E Queijo"
   },
   {
     "categoria": "Guarnições",
-    "texto": "751 Contra Filé\n752 Contra Filé, Fritas E Queijo\n079 Picanha\n080 Picanha, Fritas E Queijo"
+    "texto": "Vinagrete\nSalada Simples\n(Alface, tomate, cebola e pimentão)\nSalada Mista\n(Alface, tomate, palmito, ovo de codorna, azeitona, cebola e pimentão)\nArroz Branco\nArroz Ao Alho\nFeijão Tropeiro\nPirão\nPurê De Batata\nMolhos A Parte\n(Molho tártaro)"
   },
   {
     "categoria": "Sobremesas",
-    "texto": "751 Contra Filé\n752 Contra Filé, Fritas E Queijo\n079 Picanha\n080 Picanha, Fritas E Queijo"
+    "texto": "Petit Gateau\nPudim\nSorvetes / Picolé\n(Consulte opções)"
   },
   {
     "categoria": "Cervejas 600ml",
-    "texto": "Petit Gateau\nPudim\nSorvetes / Picolé\n(Consulte opções)"
+    "texto": "Cacildes\nPetra Origem\nItaipava Pilsen\nItaipava 100%\nAntarctica Original\nSerramalte\nSkol\nBrahma\nHeineken\nBrahma Duplo Malte\nStella Artois\nSpaten\nBohemia"
   },
   {
-    "categoria": "Latas E Long Neck",
-    "texto": "Petit Gateau\nPudim\nSorvetes / Picolé\n(Consulte opções)"
+    "categoria": "Latas e long neck",
+    "texto": "Ice\nPetra Origem\nBudweiser / Caracu / Malzbier\nBrahma / Brahma 0% / Itaipava/ (Long Neck)\nEisenbahn/Heineken (Long Neck)\nEnergético Red Bull\nBalde De Long Neck (10 Unidades)\nExceto heineken e eisenbahn\nCerveja Latão\nEnergético Tnt\nSkol Beats Gt\nCorona"
+  },
+  {
+    "categoria": "Peixes",
+    "texto": "Promoção Cascudo Médio 4 Unid\nCascudo G3\nCascudo G2\nCascudo G1\nCascudo G\nCascudo M\nPeroá G\nPeroá M\nPeroá P\nTraíra Sem Espinha G4\n(Todas as trairas acompanham arroz e vinagrete)\nTraíra Sem Espinha G3\n(Todas as trairas acompanham arroz e vinagrete)\nTraíra Sem Espinha G2\n(Todas as trairas acompanham arroz e vinagrete)\nTraíra Sem Espinha G1\n(Todas as trairas acompanham arroz e vinagrete)\nTraíra Sem Espinha G\n(Todas as trairas acompanham arroz e vinagrete)\nTraíra Sem Espinha M\n(Todas as trairas acompanham arroz e vinagrete)"
   }
 ]
