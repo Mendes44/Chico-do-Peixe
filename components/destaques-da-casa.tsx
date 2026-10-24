@@ -44,7 +44,7 @@ export function DestaquesDaCasa() {
             aria-label="Conhecer o playground: fotos e informações"
           >
             <Imagem
-              src="/santaines/images/atualizadas/playground-criancas-hd.webp"
+              src="/images/atualizadas/playground-criancas-hd.webp"
               alt="Estrutura colorida do playground infantil do Chico do Peixe"
               fill
               quality={85}
@@ -72,7 +72,7 @@ export function DestaquesDaCasa() {
             aria-label="Conhecer a música ao vivo: fotos e informações"
           >
             <Imagem
-              src="/santaines/images/atualizadas/musica-ao-vivo-hd.webp"
+              src="/images/atualizadas/musica-ao-vivo-hd.webp"
               alt="Músico tocando violão no ambiente do Chico do Peixe"
               fill
               quality={85}

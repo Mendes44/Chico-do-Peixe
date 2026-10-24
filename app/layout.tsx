@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: 'O peixe mais saboroso de BH. Venha viver esse momento.',
     images: [
       {
-        url: '/santaines/og.webp',
+        url: '/og.webp',
         width: 1200,
         height: 630,
         alt: 'Chico do Peixe Santa Inês',
@@ -44,18 +44,18 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Chico do Peixe Santa Inês',
     description: 'O peixe mais saboroso de BH.',
-    images: ['/santaines/og.webp'],
+    images: ['/og.webp'],
   },
   robots: { index: true, follow: true },
   /* Usa a própria marca na aba do navegador, substituindo o ícone genérico. */
   icons: {
     icon: [
       {
-        url: '/santaines/images/atualizadas/marca-instagram.webp',
+        url: '/images/atualizadas/marca-instagram.webp',
         type: 'image/webp',
       },
     ],
-    apple: '/santaines/images/atualizadas/marca-instagram.webp',
+    apple: '/images/atualizadas/marca-instagram.webp',
   },
 };
 

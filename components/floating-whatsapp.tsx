@@ -21,7 +21,7 @@ export function FloatingWhatsapp() {
       rel="noopener noreferrer"
       aria-label="Falar pelo WhatsApp"
     >
-      <Image src="/santaines/images/whatsapp.webp" alt="" width="28" height="28" />
+      <Image src="/images/whatsapp.webp" alt="" width="28" height="28" />
       <span>Fale com o Chico</span>
     </a>
   );

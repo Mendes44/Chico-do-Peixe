@@ -1,7 +1,7 @@
 import type { MetadataRoute } from 'next';
 /* Novas páginas devem ser acrescentadas nesta lista para indexação. */
 export default function mapaDoSite(): MetadataRoute.Sitemap {
-  const base = 'https://www.chicodopeixe.com.br/santaines';
+  const base = 'https://www.chicodopeixe.com.br';
   return [
     '',
     '/cardapio',

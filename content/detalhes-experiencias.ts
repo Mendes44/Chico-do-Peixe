@@ -1,4 +1,4 @@
-const pasta = '/santaines/images/atualizadas/';
+const pasta = '/images/atualizadas/';
 
 export type DetalheExperiencia = {
   titulo: string;

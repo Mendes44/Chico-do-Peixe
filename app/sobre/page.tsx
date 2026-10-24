@@ -8,7 +8,7 @@ export const metadata: Metadata = createPageMetadata({
   description:
     'Da origem da marca em 1994, no bairro Concórdia, aos bons encontros em Santa Inês: conheça a história do Chico do Peixe.',
   path: '/sobre',
-  image: '/santaines/images/atualizadas/mesa-de-sabores.webp',
+  image: '/images/atualizadas/mesa-de-sabores.webp',
 });
 export default function NossaHistoria() {
   return (
@@ -25,7 +25,7 @@ export default function NossaHistoria() {
       </header>
       <section className="limite narrativa">
         <Imagem
-          src="/santaines/images/atualizadas/mesa-de-sabores.webp"
+          src="/images/atualizadas/mesa-de-sabores.webp"
           alt="Buffet e ambiente atual do Chico do Peixe Santa Inês"
           width={960}
           height={1280}

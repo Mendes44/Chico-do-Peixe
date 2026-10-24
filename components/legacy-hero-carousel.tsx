@@ -24,19 +24,19 @@ type HeroSlide = {
 
 const slides: HeroSlide[] = [
   {
-    image: '/santaines/images/slide-01.webp',
+    image: '/images/slide-01.webp',
     alt: 'Área externa do Chico do Peixe',
     eyebrow: 'Seja bem vindo ao',
     title: 'Chico do Peixe',
     description: 'O mais saboroso peixe da cidade',
   },
   {
-    image: '/santaines/images/slide-06.webp',
-    mobileImage: '/santaines/images/slide-06-mobile-v3.webp',
+    image: '/images/slide-06.webp',
+    mobileImage: '/images/slide-06-mobile-v3.webp',
     alt: 'Almoço com churrasco no Chico do Peixe',
   },
   {
-    image: '/santaines/images/slide-04.webp',
+    image: '/images/slide-04.webp',
     alt: 'Chopp Itaipava gelado',
     eyebrow: 'Cerveja',
     title: 'Super Gelada',
@@ -44,14 +44,14 @@ const slides: HeroSlide[] = [
     button: 'Cardápio',
   },
   {
-    image: '/santaines/images/slide-03.webp',
+    image: '/images/slide-03.webp',
     alt: 'Peixe e porção de fritas',
     title: 'Fritas e Peixes deliciosos',
     description: 'Conheça nossa variedade',
     button: 'Cardápio',
   },
   {
-    image: '/santaines/images/slide-05.webp',
+    image: '/images/slide-05.webp',
     alt: 'Sertanejo ao vivo no Chico do Peixe',
   },
 ];

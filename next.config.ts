@@ -31,13 +31,17 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
-  basePath: '/santaines',
   images: {
     formats: ['image/webp'],
     qualities: [75, 85],
   },
   async redirects() {
     return [
+      {
+        source: '/santaines/:caminho*',
+        destination: '/:caminho*',
+        permanent: true,
+      },
       { source: '/index.php', destination: '/', permanent: true },
       ...[
         ['quemsomos', '/sobre'],

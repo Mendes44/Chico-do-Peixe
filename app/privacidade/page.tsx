@@ -9,7 +9,7 @@ export const metadata: Metadata = createPageMetadata({
   title: 'Privacidade e cookies',
   description,
   path: '/privacidade',
-  image: '/santaines/og.webp',
+  image: '/og.webp',
 });
 
 /* Versão inicial; responsável, retenção e encarregado precisam de validação jurídica. */

@@ -58,7 +58,7 @@ export function MomentsCarousel() {
         {visibleMoments.map((image, index) => (
           <figure key={`${image}-${current}-${index}`}>
             <Image
-              src={`/santaines/images/${image}`}
+              src={`/images/${image}`}
               alt="Clientes e ambientes do Chico do Peixe"
               width="960"
               height="650"

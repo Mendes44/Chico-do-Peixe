@@ -21,7 +21,7 @@ export const metadata: Metadata = createPageMetadata({
   title: 'Peixes, almoço e bons encontros em Santa Inês',
   description: site.description,
   path: '/',
-  image: '/santaines/images/atualizadas/petiscos-e-bebidas.webp',
+  image: '/images/atualizadas/petiscos-e-bebidas.webp',
 });
 export default function Inicio() {
   return (
@@ -153,7 +153,7 @@ export default function Inicio() {
         <div className="limite grade-experiencia">
           <div className="colagem-experiencia">
             <Imagem
-              src="/santaines/images/atualizadas/salao-chico.webp"
+              src="/images/atualizadas/salao-chico.webp"
               alt="Ambiente do bar do Chico do Peixe Santa Inês com iluminação acolhedora"
               width={1080}
               height={1440}
@@ -245,7 +245,7 @@ export default function Inicio() {
       <section className="delivery limite" aria-labelledby="titulo-delivery">
         <div className="foto-delivery">
           <Imagem
-            src="/santaines/images/atualizadas/happy-hour-chico.webp"
+            src="/images/atualizadas/happy-hour-chico.webp"
             alt="Camarões e drink apresentados na divulgação do happy hour do Chico"
             fill
             sizes="(min-width: 900px) 35vw, 90vw"

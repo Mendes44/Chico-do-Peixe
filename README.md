@@ -23,10 +23,10 @@ npm install
 npm run dev
 ```
 
-O site ficará disponível em `http://localhost:3000/santaines`.
+O site ficará disponível em `http://localhost:3000`.
 
 Para usar uma porta alternativa: `npm run dev -- --port 3101` e abra
-`http://localhost:3101/santaines`.
+`http://localhost:3101`.
 
 ## Redesign atual
 
@@ -40,8 +40,8 @@ Para usar uma porta alternativa: `npm run dev -- --port 3101` e abra
   vetoriais para manter nitidez com poucos bytes.
 - Conteúdo da nova experiência em `content/experiencia.ts`; contatos e horários
   em `content/site.ts`.
-- Aplicação montada em `/santaines`, com redirecionamentos permanentes 308 das
-  páginas PHP conhecidas. O domínio e as outras unidades não foram alterados.
+- Aplicação publicada diretamente na raiz do domínio, com redirecionamentos
+  permanentes 308 dos caminhos antigos sob `/santaines` e das páginas PHP conhecidas.
 
 Os arquivos originais de `FotosNovas` são preservados. Para gerar novamente as
 cinco fotos locais otimizadas e o compartilhamento: `node scripts/preparar-imagens-site.mjs`.
@@ -49,9 +49,28 @@ cinco fotos locais otimizadas e o compartilhamento: `node scripts/preparar-image
 As novas fotos do Instagram foram importadas para o próprio projeto; o site não
 depende de imagens externas ou do carregamento do Instagram para funcionar.
 
-`vercel.json` contém as reescritas de `/robots.txt` e `/sitemap.xml` para as rotas
-sob `/santaines`. Em outro provedor, aplicar essas duas regras no host do domínio.
-Nenhuma alteração de DNS ou publicação foi realizada nesta etapa.
+## Deploy na Vercel
+
+O projeto abre diretamente em `https://chico-do-peixe.vercel.app`, sem prefixo
+na URL. Não é necessário configurar `basePath`, rewrites ou redirecionamentos
+da raiz na Vercel: as páginas, imagens, CSS e JavaScript usam caminhos na raiz.
+
+Os endereços antigos sob `/santaines` redirecionam para as páginas correspondentes
+na raiz, por meio de `next.config.ts`. `robots.txt` e `sitemap.xml` também são
+servidos diretamente na raiz. Os metadados usam o domínio oficial configurado
+em `content/site.ts`, atualmente `https://www.chicodopeixe.com.br`.
+
+Depois de alterar os arquivos do projeto, envie as alterações para a branch conectada à
+Vercel e aguarde o novo deploy ficar **Ready**. Um redeploy de um commit anterior
+não inclui a correção.
+
+Na configuração do projeto na Vercel, use o preset **Next.js**, a raiz deste
+repositório como **Root Directory** e o comando de build `npm run build`.
+Mantenha **Output Directory** no padrão do Next.js, sem definir `dist`, `out` ou
+`public`.
+
+Em outro provedor compatível com Next.js, mantenha os redirecionamentos do
+framework e sirva a aplicação na raiz do domínio.
 
 ## Verificações
 

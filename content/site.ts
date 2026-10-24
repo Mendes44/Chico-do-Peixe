@@ -8,7 +8,7 @@
 export const site = {
   name: 'Chico do Peixe Santa Inês',
   shortName: 'Chico do Peixe',
-  url: 'https://www.chicodopeixe.com.br/santaines',
+  url: 'https://www.chicodopeixe.com.br',
   description:
     'Peixes, petiscos, self-service no almoço e nova adega em Santa Inês, Belo Horizonte. Todos os dias, das 11h às 23h. Venha para o Chico do Peixe.',
   phone: '+553134850258',
@@ -34,22 +34,22 @@ export const site = {
 
 export const homeMenu = [
   {
-    image: '/santaines/images/menu-peixes.webp',
+    image: '/images/menu-peixes.webp',
     title: 'Peixes',
     items: 'Cascudo · Peroá · Traíra sem espinha',
   },
   {
-    image: '/santaines/images/menu-moquecas.webp',
+    image: '/images/menu-moquecas.webp',
     title: 'Moquecas',
     items: 'Salmão · Surubim · Camarão',
   },
   {
-    image: '/santaines/images/menu-porcoes.webp',
+    image: '/images/menu-porcoes.webp',
     title: 'Porções',
     items: 'Tilápia · Lambari · Filé de cascudo',
   },
   {
-    image: '/santaines/images/menu-bebidas.webp',
+    image: '/images/menu-bebidas.webp',
     title: 'Bebidas',
     items: 'Cervejas · Drinks · Sucos',
   },
@@ -58,7 +58,7 @@ export const homeMenu = [
 export const menuCategories = [
   {
     title: 'Peixes',
-    image: '/santaines/images/menu-peixes.webp',
+    image: '/images/menu-peixes.webp',
     position: 'center',
     items: [
       'Cascudo — tamanhos M ao G5',
@@ -70,7 +70,7 @@ export const menuCategories = [
   },
   {
     title: 'Moquecas',
-    image: '/santaines/images/menu-moquecas.webp',
+    image: '/images/menu-moquecas.webp',
     position: 'center',
     items: [
       'Moqueca de salmão',
@@ -82,7 +82,7 @@ export const menuCategories = [
   },
   {
     title: 'Pratos completos',
-    image: '/santaines/images/menu-pratos.webp',
+    image: '/images/menu-pratos.webp',
     position: 'center',
     items: [
       'Surubim à dorê com arroz e fritas',
@@ -94,7 +94,7 @@ export const menuCategories = [
   },
   {
     title: 'Sugestões do Chico',
-    image: '/santaines/images/menu-sugestoes.webp',
+    image: '/images/menu-sugestoes.webp',
     position: 'center',
     items: [
       'Camarão malucão empanado',
@@ -106,7 +106,7 @@ export const menuCategories = [
   },
   {
     title: 'Porções e carnes',
-    image: '/santaines/images/menu-porcoes.webp',
+    image: '/images/menu-porcoes.webp',
     position: 'center',
     items: [
       'Lambari',
@@ -118,7 +118,7 @@ export const menuCategories = [
   },
   {
     title: 'Bebidas',
-    image: '/santaines/images/menu-bebidas.webp',
+    image: '/images/menu-bebidas.webp',
     position: 'center',
     items: [
       'Cervejas e long necks',
@@ -132,17 +132,17 @@ export const menuCategories = [
 
 export const promotions = [
   {
-    image: '/santaines/images/atracao-aniversario.webp',
+    image: '/images/atracao-aniversario.webp',
     title: 'Aniversariante',
     text: 'Você ganha um petit gâteau no dia do seu aniversário. Promoção válida para contas acima de R$ 100.',
   },
   {
-    image: '/santaines/images/atracao-itaipava.webp',
+    image: '/images/atracao-itaipava.webp',
     title: 'Cerveja gelada',
     text: 'De segunda a quinta, exceto feriados e vésperas. Consulte o valor atualizado no atendimento.',
   },
   {
-    image: '/santaines/images/atracao-brasileirao.webp',
+    image: '/images/atracao-brasileirao.webp',
     title: 'Brasileirão',
     text: 'Junte os amigos e assista aos jogos do seu time do coração.',
   },
@@ -152,35 +152,35 @@ export const attractions = [
   {
     title: 'Almoço completo',
     tag: 'Todos os dias',
-    image: '/santaines/images/slide-06.webp',
+    image: '/images/slide-06.webp',
     position: 'right center',
     text: 'Buffet variado com peixes, churrasco, massas, saladas e acompanhamentos. Uma opção completa para o almoço em família ou com o pessoal do trabalho.',
   },
   {
     title: 'Sertanejo no Chico',
     tag: 'Terças e quintas · 20h',
-    image: '/santaines/images/slide-05.webp',
+    image: '/images/slide-05.webp',
     position: 'center',
     text: 'Música sertaneja ao vivo, porções para compartilhar e cerveja gelada para aproveitar a noite com a turma.',
   },
   {
     title: 'Happy hour Itaipava',
     tag: 'Bebida gelada',
-    image: '/santaines/images/atracao-itaipava.webp',
+    image: '/images/atracao-itaipava.webp',
     position: 'center',
     text: 'Cerveja gelada para acompanhar os peixes e porções da casa. Consulte condições e valores atuais no atendimento.',
   },
   {
     title: 'Aniversariante',
     tag: 'Seu dia merece Chico',
-    image: '/santaines/images/atracao-aniversario.webp',
+    image: '/images/atracao-aniversario.webp',
     position: 'center',
     text: 'No dia do aniversário, o aniversariante ganha um petit gâteau. Promoção válida para contas acima de R$ 100.',
   },
   {
     title: 'Brasileirão',
     tag: 'Vem torcer com a gente',
-    image: '/santaines/images/atracao-brasileirao.webp',
+    image: '/images/atracao-brasileirao.webp',
     position: 'center',
     text: 'Acompanhe os jogos do seu time com a turma, cercado por petiscos, peixe e aquele clima descontraído de bar.',
   },

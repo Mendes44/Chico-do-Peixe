@@ -7,7 +7,7 @@ export const metadata: Metadata = createPageMetadata({
   description:
     'Conheça os peixes, camarões, moquecas, pratos com acompanhamento e porções do Chico do Peixe Santa Inês. Consulte valores com a equipe.',
   path: '/cardapio',
-  image: '/santaines/images/atualizadas/camaroes-com-drink.webp',
+  image: '/images/atualizadas/camaroes-com-drink.webp',
 });
 export default function Cardapio() {
   return (
